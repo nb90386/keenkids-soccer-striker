@@ -1,0 +1,688 @@
+{
+ "s07": {
+  "code": "when green flag clicked\ngo to x: (-170) y: (0)",
+  "w": 207.3919219970703,
+  "h": 122,
+  "bad": 0,
+  "texts": [
+   "when",
+   "clicked",
+   "go",
+   "to",
+   "x:",
+   "-170",
+   "y:",
+   "0"
+  ]
+ },
+ "s08": {
+  "code": "point in direction (90)\nset size to (60) %",
+  "w": 192.19183349609375,
+  "h": 106,
+  "bad": 0,
+  "texts": [
+   "point",
+   "in",
+   "direction",
+   "90",
+   "set",
+   "size",
+   "to",
+   "60",
+   "%"
+  ]
+ },
+ "s09": {
+  "code": "forever\nend",
+  "w": 164,
+  "h": 106,
+  "bad": 0,
+  "texts": [
+   "forever"
+  ]
+ },
+ "s11": {
+  "code": "if <key (right arrow v) pressed?> then\npoint in direction (90)\nmove (5) steps\nend",
+  "w": 372.3197784423828,
+  "h": 186,
+  "bad": 0,
+  "texts": [
+   "if",
+   "key",
+   "right arrow",
+   "pressed?",
+   "then",
+   "point",
+   "in",
+   "direction",
+   "90",
+   "move",
+   "5",
+   "steps"
+  ]
+ },
+ "s12": {
+  "code": "if <key (left arrow v) pressed?> then\npoint in direction (-90)\nmove (5) steps\nend",
+  "w": 361.95179748535156,
+  "h": 186,
+  "bad": 0,
+  "texts": [
+   "if",
+   "key",
+   "left arrow",
+   "pressed?",
+   "then",
+   "point",
+   "in",
+   "direction",
+   "-90",
+   "move",
+   "5",
+   "steps"
+  ]
+ },
+ "s13": {
+  "code": "if <key (up arrow v) pressed?> then\npoint in direction (0)\nmove (5) steps\nend",
+  "w": 357.79180908203125,
+  "h": 186,
+  "bad": 0,
+  "texts": [
+   "if",
+   "key",
+   "up arrow",
+   "pressed?",
+   "then",
+   "point",
+   "in",
+   "direction",
+   "0",
+   "move",
+   "5",
+   "steps"
+  ]
+ },
+ "s14": {
+  "code": "if <key (down arrow v) pressed?> then\npoint in direction (180)\nmove (5) steps\nend",
+  "w": 379.72779846191406,
+  "h": 186,
+  "bad": 0,
+  "texts": [
+   "if",
+   "key",
+   "down arrow",
+   "pressed?",
+   "then",
+   "point",
+   "in",
+   "direction",
+   "180",
+   "move",
+   "5",
+   "steps"
+  ]
+ },
+ "s15": {
+  "code": "if on edge, bounce",
+  "w": 157.83987426757812,
+  "h": 58,
+  "bad": 0,
+  "texts": [
+   "if",
+   "on",
+   "edge,",
+   "bounce"
+  ]
+ },
+ "s19": {
+  "code": "when green flag clicked\ngo to x: (-120) y: (0)\nforever\nend",
+  "w": 207.3919219970703,
+  "h": 218,
+  "bad": 0,
+  "texts": [
+   "when",
+   "clicked",
+   "go",
+   "to",
+   "x:",
+   "-120",
+   "y:",
+   "0",
+   "forever"
+  ]
+ },
+ "s20": {
+  "code": "if <touching (Player v)?> then\nend",
+  "w": 318.3518371582031,
+  "h": 114,
+  "bad": 0,
+  "texts": [
+   "if",
+   "touching",
+   "Player",
+   "?",
+   "then"
+  ]
+ },
+ "s21": {
+  "code": "point in direction ([direction v] of (Player v))",
+  "w": 393.5996856689453,
+  "h": 58,
+  "bad": 0,
+  "texts": [
+   "point",
+   "in",
+   "direction",
+   "direction",
+   "of",
+   "Player"
+  ]
+ },
+ "s22": {
+  "code": "move (6) steps",
+  "w": 157.21591186523438,
+  "h": 58,
+  "bad": 0,
+  "texts": [
+   "move",
+   "6",
+   "steps"
+  ]
+ },
+ "s26": {
+  "code": "when [space v] key pressed",
+  "w": 252.01583862304688,
+  "h": 74,
+  "bad": 0,
+  "texts": [
+   "when",
+   "space",
+   "key",
+   "pressed"
+  ]
+ },
+ "s27": {
+  "code": "if <touching (Player v)?> then\nend",
+  "w": 318.3518371582031,
+  "h": 114,
+  "bad": 0,
+  "texts": [
+   "if",
+   "touching",
+   "Player",
+   "?",
+   "then"
+  ]
+ },
+ "s28": {
+  "code": "point towards (Goal v)",
+  "w": 206.0478515625,
+  "h": 58,
+  "bad": 0,
+  "texts": [
+   "point",
+   "towards",
+   "Goal"
+  ]
+ },
+ "s29": {
+  "code": "move (60) steps",
+  "w": 157.21591186523438,
+  "h": 58,
+  "bad": 0,
+  "texts": [
+   "move",
+   "60",
+   "steps"
+  ]
+ },
+ "s30": {
+  "code": "repeat (16)\nmove (12) steps\nwait (0.03) seconds\nend",
+  "w": 198.98391723632812,
+  "h": 186,
+  "bad": 0,
+  "texts": [
+   "repeat",
+   "16",
+   "move",
+   "12",
+   "steps",
+   "wait",
+   "0.03",
+   "seconds"
+  ]
+ },
+ "s34": {
+  "code": "set [Score v] to (0)",
+  "w": 215.80795288085938,
+  "h": 58,
+  "bad": 0,
+  "texts": [
+   "set",
+   "Score",
+   "to",
+   "0"
+  ]
+ },
+ "s35": {
+  "code": "if <touching (Goal v)?> then\nend",
+  "w": 306.4798583984375,
+  "h": 114,
+  "bad": 0,
+  "texts": [
+   "if",
+   "touching",
+   "Goal",
+   "?",
+   "then"
+  ]
+ },
+ "s36": {
+  "code": "change [Score v] by (1)\nsay [GOAL!] for (1) seconds",
+  "w": 277.6158752441406,
+  "h": 106,
+  "bad": 0,
+  "texts": [
+   "change",
+   "Score",
+   "by",
+   "1",
+   "say",
+   "GOAL!",
+   "for",
+   "1",
+   "seconds"
+  ]
+ },
+ "s37": {
+  "code": "if <(Score) = (3)> then\nsay [GOAL! YOU WIN!] for (2) seconds\nstop [all v]\nend",
+  "w": 371.14381408691406,
+  "h": 194,
+  "bad": 0,
+  "texts": [
+   "if",
+   "Score",
+   "=",
+   "3",
+   "then",
+   "say",
+   "GOAL! YOU WIN!",
+   "for",
+   "2",
+   "seconds",
+   "stop",
+   "all"
+  ]
+ },
+ "s38": {
+  "code": "go to x: (0) y: (0)\nbroadcast (ResetPlayer v)",
+  "w": 233.6478271484375,
+  "h": 106,
+  "bad": 0,
+  "texts": [
+   "go",
+   "to",
+   "x:",
+   "0",
+   "y:",
+   "0",
+   "broadcast",
+   "ResetPlayer"
+  ]
+ },
+ "s39": {
+  "code": "when I receive [ResetPlayer v]\ngo to x: (-170) y: (0)\npoint in direction (90)",
+  "w": 265.08782958984375,
+  "h": 170,
+  "bad": 0,
+  "texts": [
+   "when",
+   "I",
+   "receive",
+   "ResetPlayer",
+   "go",
+   "to",
+   "x:",
+   "-170",
+   "y:",
+   "0",
+   "point",
+   "in",
+   "direction",
+   "90"
+  ]
+ },
+ "s43": {
+  "code": "when green flag clicked\ngo to x: (195) y: (0)\nset size to (70) %",
+  "w": 201.1679229736328,
+  "h": 170,
+  "bad": 0,
+  "texts": [
+   "when",
+   "clicked",
+   "go",
+   "to",
+   "x:",
+   "195",
+   "y:",
+   "0",
+   "set",
+   "size",
+   "to",
+   "70",
+   "%"
+  ]
+ },
+ "s44": {
+  "code": "forever\nglide (2.5) secs to x: (195) y: (80)\nglide (2.5) secs to x: (195) y: (-80)\nend",
+  "w": 333.71983337402344,
+  "h": 178,
+  "bad": 0,
+  "texts": [
+   "forever",
+   "glide",
+   "2.5",
+   "secs",
+   "to",
+   "x:",
+   "195",
+   "y:",
+   "80",
+   "glide",
+   "2.5",
+   "secs",
+   "to",
+   "x:",
+   "195",
+   "y:",
+   "-80"
+  ]
+ },
+ "s45": {
+  "code": "if <touching (Goalie v)?> then\nend",
+  "w": 319.2318420410156,
+  "h": 114,
+  "bad": 0,
+  "texts": [
+   "if",
+   "touching",
+   "Goalie",
+   "?",
+   "then"
+  ]
+ },
+ "s46": {
+  "code": "say [Saved!] for (1) seconds\ngo to x: (0) y: (0)",
+  "w": 279.69586181640625,
+  "h": 106,
+  "bad": 0,
+  "texts": [
+   "say",
+   "Saved!",
+   "for",
+   "1",
+   "seconds",
+   "go",
+   "to",
+   "x:",
+   "0",
+   "y:",
+   "0"
+  ]
+ },
+ "s49": {
+  "code": "when green flag clicked\nset [Time v] to (60)",
+  "w": 208.9759521484375,
+  "h": 122,
+  "bad": 0,
+  "texts": [
+   "when",
+   "clicked",
+   "set",
+   "Time",
+   "to",
+   "60"
+  ]
+ },
+ "s50": {
+  "code": "repeat until <(Time) < (1)>\nend",
+  "w": 280.7518615722656,
+  "h": 122,
+  "bad": 0,
+  "texts": [
+   "repeat",
+   "until",
+   "Time",
+   "<",
+   "1"
+  ]
+ },
+ "s51": {
+  "code": "wait (1) seconds\nchange [Time v] by (-1)",
+  "w": 234.78390502929688,
+  "h": 106,
+  "bad": 0,
+  "texts": [
+   "wait",
+   "1",
+   "seconds",
+   "change",
+   "Time",
+   "by",
+   "-1"
+  ]
+ },
+ "s52": {
+  "code": "say [FULL TIME!] for (2) seconds\nstop [all v]",
+  "w": 315.5518341064453,
+  "h": 98,
+  "bad": 0,
+  "texts": [
+   "say",
+   "FULL TIME!",
+   "for",
+   "2",
+   "seconds",
+   "stop",
+   "all"
+  ]
+ },
+ "s55": {
+  "code": "if <key (z v) pressed?> then\nmove (4) steps\nend",
+  "w": 300.57586669921875,
+  "h": 138,
+  "bad": 0,
+  "texts": [
+   "if",
+   "key",
+   "z",
+   "pressed?",
+   "then",
+   "move",
+   "4",
+   "steps"
+  ]
+ },
+ "s56": {
+  "code": "move (10) steps",
+  "w": 157.21591186523438,
+  "h": 58,
+  "bad": 0,
+  "texts": [
+   "move",
+   "10",
+   "steps"
+  ]
+ },
+ "s57": {
+  "code": "go to x: (120) y: (0)\npoint in direction (-90)",
+  "w": 201.1679229736328,
+  "h": 106,
+  "bad": 0,
+  "texts": [
+   "go",
+   "to",
+   "x:",
+   "120",
+   "y:",
+   "0",
+   "point",
+   "in",
+   "direction",
+   "-90"
+  ]
+ },
+ "s58": {
+  "code": "if <key (w v) pressed?> then\npoint in direction (0)\nmove (5) steps\nend",
+  "w": 305.02386474609375,
+  "h": 186,
+  "bad": 0,
+  "texts": [
+   "if",
+   "key",
+   "w",
+   "pressed?",
+   "then",
+   "point",
+   "in",
+   "direction",
+   "0",
+   "move",
+   "5",
+   "steps"
+  ]
+ },
+ "s59": {
+  "code": "if <touching (Player2 v)?> then\npoint in direction ([direction v] of (Player2 v))\nmove (6) steps\nend",
+  "w": 417.4956817626953,
+  "h": 186,
+  "bad": 0,
+  "texts": [
+   "if",
+   "touching",
+   "Player2",
+   "?",
+   "then",
+   "point",
+   "in",
+   "direction",
+   "direction",
+   "of",
+   "Player2",
+   "move",
+   "6",
+   "steps"
+  ]
+ },
+ "s60": {
+  "code": "when [f v] key pressed\nif <touching (Player2 v)?> then\npoint towards (Goal v)\nend",
+  "w": 327.2478332519531,
+  "h": 202,
+  "bad": 0,
+  "texts": [
+   "when",
+   "f",
+   "key",
+   "pressed",
+   "if",
+   "touching",
+   "Player2",
+   "?",
+   "then",
+   "point",
+   "towards",
+   "Goal"
+  ]
+ },
+ "s61": {
+  "code": "set [KickSpeed v] to (12)",
+  "w": 252.8319091796875,
+  "h": 58,
+  "bad": 0,
+  "texts": [
+   "set",
+   "KickSpeed",
+   "to",
+   "12"
+  ]
+ },
+ "s62": {
+  "code": "repeat until <(KickSpeed) < (1)>\nmove (KickSpeed) steps\nend",
+  "w": 324.6078186035156,
+  "h": 146,
+  "bad": 0,
+  "texts": [
+   "repeat",
+   "until",
+   "KickSpeed",
+   "<",
+   "1",
+   "move",
+   "KickSpeed",
+   "steps"
+  ]
+ },
+ "s63": {
+  "code": "change [KickSpeed v] by (-1)\nwait (0.03) seconds",
+  "w": 278.6398620605469,
+  "h": 106,
+  "bad": 0,
+  "texts": [
+   "change",
+   "KickSpeed",
+   "by",
+   "-1",
+   "wait",
+   "0.03",
+   "seconds"
+  ]
+ },
+ "s64": {
+  "code": "set [GoldenGoal v] to (0)",
+  "w": 260.5438995361328,
+  "h": 58,
+  "bad": 0,
+  "texts": [
+   "set",
+   "GoldenGoal",
+   "to",
+   "0"
+  ]
+ },
+ "s65": {
+  "code": "set [GoldenGoal v] to (1)\nsay [GOLDEN GOAL!] for (2) seconds",
+  "w": 348.7358093261719,
+  "h": 106,
+  "bad": 0,
+  "texts": [
+   "set",
+   "GoldenGoal",
+   "to",
+   "1",
+   "say",
+   "GOLDEN GOAL!",
+   "for",
+   "2",
+   "seconds"
+  ]
+ },
+ "s66": {
+  "code": "if <(GoldenGoal) = (1)> then\nsay [YOU WIN!] for (2) seconds\nstop [all v]\nend",
+  "w": 321.9198760986328,
+  "h": 194,
+  "bad": 0,
+  "texts": [
+   "if",
+   "GoldenGoal",
+   "=",
+   "1",
+   "then",
+   "say",
+   "YOU WIN!",
+   "for",
+   "2",
+   "seconds",
+   "stop",
+   "all"
+  ]
+ }
+}

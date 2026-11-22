@@ -1,0 +1,174 @@
+[
+ {
+  "id": "s07",
+  "code": "when green flag clicked\ngo to x: (-170) y: (0)"
+ },
+ {
+  "id": "s08",
+  "code": "point in direction (90)\nset size to (60) %"
+ },
+ {
+  "id": "s09",
+  "code": "forever\nend"
+ },
+ {
+  "id": "s11",
+  "code": "if <key (right arrow v) pressed?> then\npoint in direction (90)\nmove (5) steps\nend"
+ },
+ {
+  "id": "s12",
+  "code": "if <key (left arrow v) pressed?> then\npoint in direction (-90)\nmove (5) steps\nend"
+ },
+ {
+  "id": "s13",
+  "code": "if <key (up arrow v) pressed?> then\npoint in direction (0)\nmove (5) steps\nend"
+ },
+ {
+  "id": "s14",
+  "code": "if <key (down arrow v) pressed?> then\npoint in direction (180)\nmove (5) steps\nend"
+ },
+ {
+  "id": "s15",
+  "code": "if on edge, bounce"
+ },
+ {
+  "id": "s19",
+  "code": "when green flag clicked\ngo to x: (-120) y: (0)\nforever\nend"
+ },
+ {
+  "id": "s20",
+  "code": "if <touching (Player v)?> then\nend"
+ },
+ {
+  "id": "s21",
+  "code": "point in direction ([direction v] of (Player v))"
+ },
+ {
+  "id": "s22",
+  "code": "move (6) steps"
+ },
+ {
+  "id": "s26",
+  "code": "when [space v] key pressed"
+ },
+ {
+  "id": "s27",
+  "code": "if <touching (Player v)?> then\nend"
+ },
+ {
+  "id": "s28",
+  "code": "point towards (Goal v)"
+ },
+ {
+  "id": "s29",
+  "code": "move (60) steps"
+ },
+ {
+  "id": "s30",
+  "code": "repeat (16)\nmove (12) steps\nwait (0.03) seconds\nend"
+ },
+ {
+  "id": "s34",
+  "code": "set [Score v] to (0)"
+ },
+ {
+  "id": "s35",
+  "code": "if <touching (Goal v)?> then\nend"
+ },
+ {
+  "id": "s36",
+  "code": "change [Score v] by (1)\nsay [GOAL!] for (1) seconds"
+ },
+ {
+  "id": "s37",
+  "code": "if <(Score) = (3)> then\nsay [GOAL! YOU WIN!] for (2) seconds\nstop [all v]\nend"
+ },
+ {
+  "id": "s38",
+  "code": "go to x: (0) y: (0)\nbroadcast (ResetPlayer v)"
+ },
+ {
+  "id": "s39",
+  "code": "when I receive [ResetPlayer v]\ngo to x: (-170) y: (0)\npoint in direction (90)"
+ },
+ {
+  "id": "s43",
+  "code": "when green flag clicked\ngo to x: (195) y: (0)\nset size to (70) %"
+ },
+ {
+  "id": "s44",
+  "code": "forever\nglide (2.5) secs to x: (195) y: (80)\nglide (2.5) secs to x: (195) y: (-80)\nend"
+ },
+ {
+  "id": "s45",
+  "code": "if <touching (Goalie v)?> then\nend"
+ },
+ {
+  "id": "s46",
+  "code": "say [Saved!] for (1) seconds\ngo to x: (0) y: (0)"
+ },
+ {
+  "id": "s49",
+  "code": "when green flag clicked\nset [Time v] to (60)"
+ },
+ {
+  "id": "s50",
+  "code": "repeat until <(Time) < (1)>\nend"
+ },
+ {
+  "id": "s51",
+  "code": "wait (1) seconds\nchange [Time v] by (-1)"
+ },
+ {
+  "id": "s52",
+  "code": "say [FULL TIME!] for (2) seconds\nstop [all v]"
+ },
+ {
+  "id": "s55",
+  "code": "if <key (z v) pressed?> then\nmove (4) steps\nend"
+ },
+ {
+  "id": "s56",
+  "code": "move (10) steps"
+ },
+ {
+  "id": "s57",
+  "code": "go to x: (120) y: (0)\npoint in direction (-90)"
+ },
+ {
+  "id": "s58",
+  "code": "if <key (w v) pressed?> then\npoint in direction (0)\nmove (5) steps\nend"
+ },
+ {
+  "id": "s59",
+  "code": "if <touching (Player2 v)?> then\npoint in direction ([direction v] of (Player2 v))\nmove (6) steps\nend"
+ },
+ {
+  "id": "s60",
+  "code": "when [f v] key pressed\nif <touching (Player2 v)?> then\npoint towards (Goal v)\nend"
+ },
+ {
+  "id": "s61",
+  "code": "set [KickSpeed v] to (12)"
+ },
+ {
+  "id": "s62",
+  "code": "repeat until <(KickSpeed) < (1)>\nmove (KickSpeed) steps\nend"
+ },
+ {
+  "id": "s63",
+  "code": "change [KickSpeed v] by (-1)\nwait (0.03) seconds"
+ },
+ {
+  "id": "s64",
+  "code": "set [GoldenGoal v] to (0)"
+ },
+ {
+  "id": "s65",
+  "code": "set [GoldenGoal v] to (1)\nsay [GOLDEN GOAL!] for (2) seconds"
+ },
+ {
+  "id": "s66",
+  "code": "if <(GoldenGoal) = (1)> then\nsay [YOU WIN!] for (2) seconds\nstop [all v]\nend"
+ }
+]

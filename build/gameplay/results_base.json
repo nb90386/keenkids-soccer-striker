@@ -1,0 +1,1624 @@
+{
+ "t1_initial": {
+  "pass": true,
+  "snapshotAtFrame3": {
+   "frame": 3,
+   "ms": 835,
+   "threads": 4,
+   "vars": {
+    "Score": "0",
+    "Time": "60"
+   },
+   "s": {
+    "Player": {
+     "x": -170,
+     "y": 0,
+     "dir": 90,
+     "size": 60,
+     "bubble": ""
+    },
+    "Ball": {
+     "x": -120,
+     "y": 0,
+     "dir": 90,
+     "size": 45,
+     "bubble": ""
+    },
+    "Goalie": {
+     "x": 195,
+     "y": 3.264,
+     "dir": 90,
+     "size": 70,
+     "bubble": ""
+    },
+    "Goal": {
+     "x": 222,
+     "y": 0,
+     "dir": 90,
+     "size": 100,
+     "bubble": ""
+    }
+   }
+  },
+  "errors": []
+ },
+ "t2_arrows": {
+  "pass": true,
+  "ArrowRight": {
+   "ok": true,
+   "expectedDir": 90,
+   "dirs": [
+    90
+   ],
+   "perFrameDistance": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ],
+   "end": {
+    "x": 60,
+    "y": -20,
+    "dir": 90,
+    "size": 60,
+    "bubble": ""
+   }
+  },
+  "ArrowLeft": {
+   "ok": true,
+   "expectedDir": -90,
+   "dirs": [
+    -90
+   ],
+   "perFrameDistance": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ],
+   "end": {
+    "x": -60,
+    "y": -20,
+    "dir": -90,
+    "size": 60,
+    "bubble": ""
+   }
+  },
+  "ArrowUp": {
+   "ok": true,
+   "expectedDir": 0,
+   "dirs": [
+    0
+   ],
+   "perFrameDistance": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ],
+   "end": {
+    "x": 0,
+    "y": 40,
+    "dir": 0,
+    "size": 60,
+    "bubble": ""
+   }
+  },
+  "ArrowDown": {
+   "ok": true,
+   "expectedDir": 180,
+   "dirs": [
+    180
+   ],
+   "perFrameDistance": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ],
+   "end": {
+    "x": 0,
+    "y": -80,
+    "dir": 180,
+    "size": 60,
+    "bubble": ""
+   }
+  },
+  "edge": {
+   "ArrowRight": {
+    "onStage": true,
+    "extentsOfPlayerBounds": {
+     "maxRight": 240.5,
+     "minLeft": 203.5,
+     "maxTop": 33.3,
+     "minBottom": -29.7
+    },
+    "last5": [
+     {
+      "x": 223.5,
+      "y": 0,
+      "dir": -90
+     },
+     {
+      "x": 223,
+      "y": 0,
+      "dir": -90
+     },
+     {
+      "x": 223.5,
+      "y": 0,
+      "dir": -90
+     },
+     {
+      "x": 223,
+      "y": 0,
+      "dir": -90
+     },
+     {
+      "x": 223.5,
+      "y": 0,
+      "dir": -90
+     }
+    ]
+   },
+   "ArrowLeft": {
+    "onStage": true,
+    "extentsOfPlayerBounds": {
+     "maxRight": -203.5,
+     "minLeft": -240.5,
+     "maxTop": 33.3,
+     "minBottom": -29.7
+    },
+    "last5": [
+     {
+      "x": -223.5,
+      "y": 0,
+      "dir": 90
+     },
+     {
+      "x": -224,
+      "y": 0,
+      "dir": 90
+     },
+     {
+      "x": -223.5,
+      "y": 0,
+      "dir": 90
+     },
+     {
+      "x": -224,
+      "y": 0,
+      "dir": 90
+     },
+     {
+      "x": -223.5,
+      "y": 0,
+      "dir": 90
+     }
+    ]
+   },
+   "ArrowUp": {
+    "onStage": true,
+    "extentsOfPlayerBounds": {
+     "maxRight": 17.1,
+     "minLeft": -16.5,
+     "maxTop": 180.3,
+     "minBottom": 116.3
+    },
+    "last5": [
+     {
+      "x": 0,
+      "y": 146.6,
+      "dir": 180
+     },
+     {
+      "x": 0,
+      "y": 146.3,
+      "dir": 180
+     },
+     {
+      "x": 0,
+      "y": 147,
+      "dir": 180
+     },
+     {
+      "x": 0,
+      "y": 146.7,
+      "dir": 180
+     },
+     {
+      "x": 0,
+      "y": 146.4,
+      "dir": 180
+     }
+    ]
+   },
+   "ArrowDown": {
+    "onStage": true,
+    "extentsOfPlayerBounds": {
+     "maxRight": 17.1,
+     "minLeft": -16.5,
+     "maxTop": -116.7,
+     "minBottom": -180.7
+    },
+    "last5": [
+     {
+      "x": 0,
+      "y": -149.8,
+      "dir": 0
+     },
+     {
+      "x": 0,
+      "y": -150.1,
+      "dir": 0
+     },
+     {
+      "x": 0,
+      "y": -150.4,
+      "dir": 0
+     },
+     {
+      "x": 0,
+      "y": -150.7,
+      "dir": 0
+     },
+     {
+      "x": 0,
+      "y": -150,
+      "dir": 0
+     }
+    ]
+   }
+  },
+  "note": "Ball teleported to (-200,140) to keep it out of the way; Player teleported to start points.",
+  "errors": []
+ },
+ "t3_dribble": {
+  "pass": true,
+  "reference": {
+   "ballPerFrameDx": [
+    0,
+    0,
+    0,
+    6,
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    0,
+    6,
+    6,
+    6,
+    6
+   ],
+   "maxBallStepPerFrame": 6,
+   "ballDirsWhenMoving": [
+    90
+   ],
+   "playerDir": [
+    90
+   ],
+   "ballStart": {
+    "x": -120,
+    "y": 0,
+    "dir": 90,
+    "size": 45,
+    "bubble": ""
+   },
+   "ballEnd": {
+    "x": 90,
+    "y": 0,
+    "dir": 90,
+    "size": 45,
+    "bubble": ""
+   },
+   "playerEnd": {
+    "x": 55,
+    "y": 0,
+    "dir": 90,
+    "size": 60,
+    "bubble": ""
+   },
+   "maxGapBallMinusPlayerX": 50,
+   "framesBallMoved": 35,
+   "says": [],
+   "displacementFromFirstContact20Frames": 96
+  },
+  "original": {
+   "ballPerFrameDx": [
+    0,
+    0,
+    0,
+    18,
+    0,
+    12,
+    0,
+    12,
+    0,
+    12,
+    0,
+    12,
+    0,
+    12,
+    0,
+    12,
+    0,
+    12,
+    0,
+    12,
+    0,
+    12,
+    0,
+    12,
+    0,
+    12,
+    0,
+    12,
+    0,
+    12,
+    0,
+    12,
+    0,
+    12,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    18,
+    0
+   ],
+   "maxBallStepPerFrame": 18,
+   "ballDirsWhenMoving": [
+    90
+   ],
+   "playerDir": [
+    90
+   ],
+   "ballStart": {
+    "x": -120,
+    "y": 0,
+    "dir": 90,
+    "size": 45,
+    "bubble": ""
+   },
+   "ballEnd": {
+    "x": 96,
+    "y": 0,
+    "dir": 90,
+    "size": 45,
+    "bubble": ""
+   },
+   "playerEnd": {
+    "x": 55,
+    "y": 0,
+    "dir": 90,
+    "size": 60,
+    "bubble": ""
+   },
+   "maxGapBallMinusPlayerX": 78,
+   "framesBallMoved": 17,
+   "says": [],
+   "firstContactFrameIndex": 3,
+   "displacementFromFirstContact20Frames": 126
+  }
+ },
+ "t4_kick": {
+  "pass": true,
+  "spaceNotTouching": {
+   "pass": true,
+   "touch": false,
+   "before": {
+    "x": -120,
+    "y": 0,
+    "dir": 90,
+    "size": 45,
+    "bubble": ""
+   },
+   "after": {
+    "x": -120,
+    "y": 0,
+    "dir": 90,
+    "size": 45,
+    "bubble": ""
+   }
+  },
+  "spaceWhileStandingAfterContact": {
+   "touchingWhenSpacePressed": true,
+   "before": {
+    "x": -132,
+    "y": 0,
+    "dir": 90,
+    "size": 45,
+    "bubble": ""
+   },
+   "after": {
+    "x": -126,
+    "y": 0,
+    "dir": 90,
+    "size": 45,
+    "bubble": ""
+   },
+   "ballMoved": 6
+  },
+  "spaceTouchingWhileRunning": {
+   "kicks": [
+    {
+     "setup": "Player teleported to (-170,0) dir 90, Ball 38 px ahead; right arrow held; space pressed on the frame contact is detected",
+     "ballAtSpacePress": {
+      "x": -132,
+      "y": 0,
+      "dir": 90,
+      "size": 45,
+      "bubble": ""
+     },
+     "ballDirAfterKick": 90,
+     "expectedDirFromBallAtPress": 90,
+     "perFrameStepDistances": [
+      78,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12
+     ],
+     "totalDistance": 258,
+     "framesMoving": 16,
+     "end": {
+      "x": 126,
+      "y": 0,
+      "dir": 90,
+      "size": 45,
+      "bubble": ""
+     },
+     "pass": true
+    },
+    {
+     "setup": "Player teleported to (-190,120) dir 90, Ball 38 px ahead; right arrow held; space pressed on the frame contact is detected",
+     "ballAtSpacePress": {
+      "x": -152,
+      "y": 120,
+      "dir": 90,
+      "size": 45,
+      "bubble": ""
+     },
+     "ballDirAfterKick": 108.06,
+     "expectedDirFromBallAtPress": 107.79,
+     "perFrameStepDistances": [
+      77.73,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12,
+      0,
+      12
+     ],
+     "totalDistance": 257.71,
+     "framesMoving": 16,
+     "end": {
+      "x": 93.584,
+      "y": 41.875,
+      "dir": 108.06,
+      "size": 45,
+      "bubble": ""
+     },
+     "pass": true
+    }
+   ],
+   "says": []
+  }
+ },
+ "t5_t6_goals": {
+  "goals": [
+   {
+    "goal": 1,
+    "framesKickToReset": 22,
+    "ballTrailFromResetFrame": [
+     [
+      9.915,
+      6.76
+     ],
+     [
+      9.915,
+      6.76
+     ],
+     [
+      19.829,
+      13.52
+     ],
+     [
+      19.829,
+      13.52
+     ],
+     [
+      29.744,
+      20.28
+     ],
+     [
+      29.744,
+      20.28
+     ],
+     [
+      39.659,
+      27.04
+     ],
+     [
+      39.659,
+      27.04
+     ]
+    ],
+    "afterStop": null,
+    "ballTouchingPlayerAtKick": true,
+    "scoreBefore": 0,
+    "scoreValuesSeen": [
+     1
+    ],
+    "says": [
+     "GOAL!"
+    ],
+    "firstGoalBubbleFrameAfterKick": 0,
+    "end": {
+     "ball": {
+      "x": 39.659,
+      "y": 27.04,
+      "dir": 55.713,
+      "size": 45,
+      "bubble": ""
+     },
+     "player": {
+      "x": -170,
+      "y": 0,
+      "dir": 90,
+      "size": 60,
+      "bubble": ""
+     },
+     "score": 1,
+     "threads": 4
+    },
+    "events": []
+   },
+   {
+    "goal": 2,
+    "framesKickToReset": 29,
+    "ballTrailFromResetFrame": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ],
+    "afterStop": null,
+    "ballTouchingPlayerAtKick": true,
+    "scoreBefore": 1,
+    "scoreValuesSeen": [
+     2
+    ],
+    "says": [
+     "GOAL!"
+    ],
+    "firstGoalBubbleFrameAfterKick": 0,
+    "end": {
+     "ball": {
+      "x": 0,
+      "y": 0,
+      "dir": 55.713,
+      "size": 45,
+      "bubble": ""
+     },
+     "player": {
+      "x": -170,
+      "y": 0,
+      "dir": 90,
+      "size": 60,
+      "bubble": ""
+     },
+     "score": 2,
+     "threads": 4
+    },
+    "events": []
+   },
+   {
+    "goal": 3,
+    "framesKickToReset": -1,
+    "ballTrailFromResetFrame": null,
+    "afterStop": {
+     "threadsAfter": 0,
+     "timeBefore": 45,
+     "timeAfter1s": 45,
+     "goalieYBefore": -71.424,
+     "goalieYAfter1s": -71.424,
+     "playerBeforeUpKey": {
+      "x": 100,
+      "y": -60,
+      "dir": 180,
+      "size": 60,
+      "bubble": ""
+     },
+     "playerAfterUpKey1s": {
+      "x": 100,
+      "y": -60,
+      "dir": 180,
+      "size": 60,
+      "bubble": ""
+     },
+     "bubbleAfterStop": ""
+    },
+    "ballTouchingPlayerAtKick": true,
+    "scoreBefore": 2,
+    "scoreValuesSeen": [
+     3
+    ],
+    "says": [
+     "GOAL!",
+     "GOAL! YOU WIN!"
+    ],
+    "firstGoalBubbleFrameAfterKick": 0,
+    "end": {
+     "ball": {
+      "x": 250,
+      "y": 81.961,
+      "dir": 55.713,
+      "size": 45,
+      "bubble": ""
+     },
+     "player": {
+      "x": 100,
+      "y": -60,
+      "dir": 180,
+      "size": 60,
+      "bubble": ""
+     },
+     "score": 3,
+     "threads": 0
+    },
+    "events": [
+     {
+      "ev": "STOP_ALL",
+      "frame": 454,
+      "ms": 16040
+     },
+     {
+      "ev": "RUN_STOP",
+      "frame": 454,
+      "ms": 16041
+     }
+    ]
+   }
+  ]
+ },
+ "shots_goal": {
+  "goalShotState": {
+   "frame": 56,
+   "ms": 1850,
+   "threads": 5,
+   "vars": {
+    "Score": 1,
+    "Time": 59
+   },
+   "s": {
+    "Player": {
+     "x": 100,
+     "y": -60,
+     "dir": 90,
+     "size": 60,
+     "bubble": ""
+    },
+    "Ball": {
+     "x": 213.318,
+     "y": -5.92,
+     "dir": 55.713,
+     "size": 45,
+     "bubble": "GOAL!"
+    },
+    "Goalie": {
+     "x": 195,
+     "y": 57.696,
+     "dir": 90,
+     "size": 70,
+     "bubble": ""
+    },
+    "Goal": {
+     "x": 222,
+     "y": 0,
+     "dir": 90,
+     "size": 100,
+     "bubble": ""
+    }
+   }
+  }
+ },
+ "t8_save": {
+  "setup": "Waited until |Goalie y|<8; Player teleported to (30,0) dir 90, Ball to (68,0); right arrow held until contact, then space.",
+  "ballTouchingPlayerAtKick": true,
+  "says": [
+   "Saved!"
+  ],
+  "savedBubbleFrame": 2,
+  "touchingAtSavedFrame": {
+   "goal": false,
+   "goalie": true
+  },
+  "ballTrailFirst20": [
+   [
+    146,
+    0,
+    ""
+   ],
+   [
+    158,
+    0,
+    ""
+   ],
+   [
+    158,
+    0,
+    "Saved!"
+   ],
+   [
+    170,
+    0,
+    "Saved!"
+   ],
+   [
+    170,
+    0,
+    "Saved!"
+   ],
+   [
+    182,
+    0,
+    "Saved!"
+   ],
+   [
+    182,
+    0,
+    "Saved!"
+   ],
+   [
+    194,
+    0,
+    "Saved!"
+   ],
+   [
+    194,
+    0,
+    "Saved!"
+   ],
+   [
+    206,
+    0,
+    "Saved!"
+   ],
+   [
+    206,
+    0,
+    "Saved!"
+   ],
+   [
+    218,
+    0,
+    "Saved!"
+   ],
+   [
+    218,
+    0,
+    "Saved!"
+   ],
+   [
+    230,
+    0,
+    "Saved!"
+   ],
+   [
+    230,
+    0,
+    "Saved!"
+   ],
+   [
+    242,
+    0,
+    "Saved!"
+   ],
+   [
+    242,
+    0,
+    "Saved!"
+   ],
+   [
+    243,
+    0,
+    "Saved!"
+   ],
+   [
+    243,
+    0,
+    "Saved!"
+   ],
+   [
+    243,
+    0,
+    "Saved!"
+   ]
+  ],
+  "ballEnd": {
+   "x": 0,
+   "y": 0,
+   "dir": 90,
+   "size": 45,
+   "bubble": ""
+  },
+  "playerBefore": {
+   "x": 35,
+   "y": 0,
+   "dir": 90,
+   "size": 60,
+   "bubble": ""
+  },
+  "playerEnd": {
+   "x": 40,
+   "y": 0,
+   "dir": 90,
+   "size": 60,
+   "bubble": ""
+  },
+  "scoreBefore": "0",
+  "scoreEnd": "0",
+  "maxBallXDuringSavedBubble": 243,
+  "pass": true
+ },
+ "t7_goalie": {
+  "pass": true,
+  "reference": {
+   "minY": -80,
+   "maxY": 80,
+   "xValues": [
+    195
+   ],
+   "turningPoints": [
+    {
+     "ms": 2576,
+     "y": 80
+    },
+    {
+     "ms": 5117,
+     "y": -80
+    },
+    {
+     "ms": 7625,
+     "y": 80
+    },
+    {
+     "ms": 10165,
+     "y": -80
+    }
+   ],
+   "legDurationsSec": [
+    2.541,
+    2.508,
+    2.54
+   ],
+   "pass": true
+  },
+  "original": {
+   "minY": -50,
+   "maxY": 50,
+   "xValues": [
+    195
+   ],
+   "turningPoints": [
+    {
+     "ms": 2048,
+     "y": 50
+    },
+    {
+     "ms": 4094,
+     "y": -50
+    },
+    {
+     "ms": 6106,
+     "y": 50
+    },
+    {
+     "ms": 8152,
+     "y": -50
+    },
+    {
+     "ms": 10166,
+     "y": 50
+    }
+   ],
+   "legDurationsSec": [
+    2.046,
+    2.012,
+    2.046,
+    2.014
+   ]
+  }
+ },
+ "t9_both": {
+  "trials": [
+   {
+    "ballTeleportedTo": "goalie.x+10, goalie.y",
+    "both": {
+     "goal": true,
+     "goalie": true,
+     "ball": {
+      "x": 205,
+      "y": 2.56,
+      "dir": 90,
+      "size": 45,
+      "bubble": ""
+     },
+     "goalieY": 2.56
+    },
+    "nextFrame": {
+     "goal": true,
+     "goalie": true,
+     "bubble": "GOAL!"
+    },
+    "score0": 0,
+    "score1": 1,
+    "says": [
+     "GOAL!"
+    ],
+    "ballEnd": {
+     "x": 0,
+     "y": 0,
+     "dir": 90,
+     "size": 45,
+     "bubble": ""
+    },
+    "playerEnd": {
+     "x": -170,
+     "y": 0,
+     "dir": 90,
+     "size": 60,
+     "bubble": ""
+    }
+   },
+   {
+    "ballTeleportedTo": "goalie.x+12, goalie.y",
+    "both": {
+     "goal": true,
+     "goalie": true,
+     "ball": {
+      "x": 207,
+      "y": 2.752,
+      "dir": 90,
+      "size": 45,
+      "bubble": ""
+     },
+     "goalieY": 2.752
+    },
+    "nextFrame": {
+     "goal": true,
+     "goalie": true,
+     "bubble": "GOAL!"
+    },
+    "score0": 0,
+    "score1": 1,
+    "says": [
+     "GOAL!"
+    ],
+    "ballEnd": {
+     "x": 0,
+     "y": 0,
+     "dir": 90,
+     "size": 45,
+     "bubble": ""
+    },
+    "playerEnd": {
+     "x": -170,
+     "y": 0,
+     "dir": 90,
+     "size": 60,
+     "bubble": ""
+    }
+   },
+   {
+    "ballTeleportedTo": "goalie.x+15, goalie.y",
+    "both": {
+     "goal": true,
+     "goalie": true,
+     "ball": {
+      "x": 210,
+      "y": 2.784,
+      "dir": 90,
+      "size": 45,
+      "bubble": ""
+     },
+     "goalieY": 2.784
+    },
+    "nextFrame": {
+     "goal": true,
+     "goalie": true,
+     "bubble": "GOAL!"
+    },
+    "score0": 0,
+    "score1": 1,
+    "says": [
+     "GOAL!"
+    ],
+    "ballEnd": {
+     "x": 0,
+     "y": 0,
+     "dir": 90,
+     "size": 45,
+     "bubble": ""
+    },
+    "playerEnd": {
+     "x": -170,
+     "y": 0,
+     "dir": 90,
+     "size": 60,
+     "bubble": ""
+    }
+   }
+  ]
+ },
+ "t10_clock": {
+  "timeChanges": [
+   {
+    "ms": 0,
+    "frame": 0,
+    "Time": 0
+   },
+   {
+    "ms": 784,
+    "frame": 1,
+    "Time": "60"
+   },
+   {
+    "ms": 1062,
+    "frame": 10,
+    "Time": 59
+   },
+   {
+    "ms": 2116,
+    "frame": 42,
+    "Time": 58
+   },
+   {
+    "ms": 3172,
+    "frame": 74,
+    "Time": 57
+   },
+   {
+    "ms": 4228,
+    "frame": 106,
+    "Time": 56
+   },
+   {
+    "ms": 5284,
+    "frame": 138,
+    "Time": 55
+   },
+   {
+    "ms": 6340,
+    "frame": 170,
+    "Time": 54
+   },
+   {
+    "ms": 7396,
+    "frame": 202,
+    "Time": 53
+   },
+   {
+    "ms": 8452,
+    "frame": 234,
+    "Time": 52
+   },
+   {
+    "ms": 9508,
+    "frame": 266,
+    "Time": 51
+   },
+   {
+    "ms": 10563,
+    "frame": 298,
+    "Time": 50
+   },
+   {
+    "ms": 11621,
+    "frame": 330,
+    "Time": 49
+   },
+   {
+    "ms": 12676,
+    "frame": 362,
+    "Time": 48
+   },
+   {
+    "ms": 13732,
+    "frame": 394,
+    "Time": 47
+   },
+   {
+    "ms": 14789,
+    "frame": 426,
+    "Time": 46
+   },
+   {
+    "ms": 15845,
+    "frame": 458,
+    "Time": 45
+   },
+   {
+    "ms": 16900,
+    "frame": 490,
+    "Time": 44
+   },
+   {
+    "ms": 17956,
+    "frame": 522,
+    "Time": 43
+   },
+   {
+    "ms": 19011,
+    "frame": 554,
+    "Time": 42
+   },
+   {
+    "ms": 20068,
+    "frame": 586,
+    "Time": 41
+   },
+   {
+    "ms": 21124,
+    "frame": 618,
+    "Time": 40
+   },
+   {
+    "ms": 22179,
+    "frame": 650,
+    "Time": 39
+   },
+   {
+    "ms": 23237,
+    "frame": 682,
+    "Time": 38
+   },
+   {
+    "ms": 24292,
+    "frame": 714,
+    "Time": 37
+   },
+   {
+    "ms": 25348,
+    "frame": 746,
+    "Time": 36
+   },
+   {
+    "ms": 26405,
+    "frame": 778,
+    "Time": 35
+   },
+   {
+    "ms": 27460,
+    "frame": 810,
+    "Time": 34
+   },
+   {
+    "ms": 28516,
+    "frame": 842,
+    "Time": 33
+   },
+   {
+    "ms": 29572,
+    "frame": 874,
+    "Time": 32
+   },
+   {
+    "ms": 30627,
+    "frame": 906,
+    "Time": 31
+   },
+   {
+    "ms": 31684,
+    "frame": 938,
+    "Time": 30
+   },
+   {
+    "ms": 32740,
+    "frame": 970,
+    "Time": 29
+   },
+   {
+    "ms": 33795,
+    "frame": 1002,
+    "Time": 28
+   },
+   {
+    "ms": 34852,
+    "frame": 1034,
+    "Time": 27
+   },
+   {
+    "ms": 35908,
+    "frame": 1066,
+    "Time": 26
+   },
+   {
+    "ms": 36963,
+    "frame": 1098,
+    "Time": 25
+   },
+   {
+    "ms": 38021,
+    "frame": 1130,
+    "Time": 24
+   },
+   {
+    "ms": 39077,
+    "frame": 1162,
+    "Time": 23
+   },
+   {
+    "ms": 40132,
+    "frame": 1194,
+    "Time": 22
+   },
+   {
+    "ms": 41188,
+    "frame": 1226,
+    "Time": 21
+   },
+   {
+    "ms": 42244,
+    "frame": 1258,
+    "Time": 20
+   },
+   {
+    "ms": 43300,
+    "frame": 1290,
+    "Time": 19
+   },
+   {
+    "ms": 44356,
+    "frame": 1322,
+    "Time": 18
+   },
+   {
+    "ms": 45412,
+    "frame": 1354,
+    "Time": 17
+   },
+   {
+    "ms": 46468,
+    "frame": 1386,
+    "Time": 16
+   },
+   {
+    "ms": 47525,
+    "frame": 1418,
+    "Time": 15
+   },
+   {
+    "ms": 48580,
+    "frame": 1450,
+    "Time": 14
+   },
+   {
+    "ms": 49636,
+    "frame": 1482,
+    "Time": 13
+   },
+   {
+    "ms": 50692,
+    "frame": 1514,
+    "Time": 12
+   },
+   {
+    "ms": 51748,
+    "frame": 1546,
+    "Time": 11
+   },
+   {
+    "ms": 52804,
+    "frame": 1578,
+    "Time": 10
+   },
+   {
+    "ms": 53860,
+    "frame": 1610,
+    "Time": 9
+   },
+   {
+    "ms": 54916,
+    "frame": 1642,
+    "Time": 8
+   },
+   {
+    "ms": 55972,
+    "frame": 1674,
+    "Time": 7
+   },
+   {
+    "ms": 57028,
+    "frame": 1706,
+    "Time": 6
+   },
+   {
+    "ms": 58084,
+    "frame": 1738,
+    "Time": 5
+   },
+   {
+    "ms": 59140,
+    "frame": 1770,
+    "Time": 4
+   },
+   {
+    "ms": 60196,
+    "frame": 1802,
+    "Time": 3
+   },
+   {
+    "ms": 61252,
+    "frame": 1834,
+    "Time": 2
+   },
+   {
+    "ms": 62308,
+    "frame": 1866,
+    "Time": 1
+   },
+   {
+    "ms": 63364,
+    "frame": 1898,
+    "Time": 0
+   }
+  ],
+  "setTo60AtMs": 784,
+  "firstDecrementMs": 1062,
+  "firstDecrementAfterSetMs": 278,
+  "setTo60ToZeroSec": 62.58,
+  "decrementIntervalsMs": {
+   "min": 1054,
+   "max": 1058,
+   "mean": 1056
+  },
+  "timeHitZeroMs": 63364,
+  "fullTimeSay": {
+   "frame": 1898,
+   "ms": 63421,
+   "sprite": "Ball",
+   "type": "say",
+   "text": "FULL TIME! 🏁"
+  },
+  "fullTimeTextCodepoints": [
+   "46",
+   "55",
+   "4c",
+   "4c",
+   "20",
+   "54",
+   "49",
+   "4d",
+   "45",
+   "21",
+   "20",
+   "1f3c1"
+  ],
+  "says": [
+   {
+    "frame": 1898,
+    "ms": 63421,
+    "sprite": "Ball",
+    "type": "say",
+    "text": "FULL TIME! 🏁"
+   }
+  ],
+  "goalieAtStop": -21.439999999999998,
+  "goalie1_5sAfterStop": -21.439999999999998,
+  "snapAfterStop": {
+   "frame": 1995,
+   "ms": 66995,
+   "threads": 0,
+   "vars": {
+    "Score": "0",
+    "Time": 0
+   },
+   "s": {
+    "Player": {
+     "x": -170,
+     "y": 0,
+     "dir": 90,
+     "size": 60,
+     "bubble": ""
+    },
+    "Ball": {
+     "x": -120,
+     "y": 0,
+     "dir": 90,
+     "size": 45,
+     "bubble": ""
+    },
+    "Goalie": {
+     "x": 195,
+     "y": -21.44,
+     "dir": 90,
+     "size": 70,
+     "bubble": ""
+    },
+    "Goal": {
+     "x": 222,
+     "y": 0,
+     "dir": 90,
+     "size": 100,
+     "bubble": ""
+    }
+   }
+  },
+  "playerAfterKeys": {
+   "x": -170,
+   "y": 0,
+   "dir": 90,
+   "size": 60,
+   "bubble": ""
+  },
+  "events": [
+   {
+    "ev": "STOP_ALL",
+    "frame": 0,
+    "ms": 3
+   },
+   {
+    "ev": "STOP_ALL",
+    "frame": 1947,
+    "ms": 65442
+   },
+   {
+    "ev": "RUN_STOP",
+    "frame": 1947,
+    "ms": 65444
+   }
+  ],
+  "threads": 0,
+  "pass": true
+ }
+}

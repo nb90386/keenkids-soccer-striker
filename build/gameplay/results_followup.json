@@ -1,0 +1,660 @@
+{
+ "A_c2b_ballFront_P2_F": {
+  "file": "build/gameplay/variants/c2b_two_players_branch.sb3",
+  "preFrontBeforeFlag": [
+   "Ball"
+  ],
+  "secondFlag": false,
+  "kicker": "Player2",
+  "layersBottomToTop": "Stage>Goal>Goalie>Player>Player2>Ball",
+  "threadOrder": "Ball,Ball,Player2,Player,Goalie",
+  "kicked": 10,
+  "attempts": 12,
+  "rows": [
+   {
+    "n": 1,
+    "moved12f": 138.4,
+    "kicked": true
+   },
+   {
+    "n": 2,
+    "moved12f": 138.4,
+    "kicked": true
+   },
+   {
+    "n": 3,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 4,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 5,
+    "moved12f": 138.3,
+    "kicked": true
+   },
+   {
+    "n": 6,
+    "moved12f": 138.3,
+    "kicked": true
+   },
+   {
+    "n": 7,
+    "moved12f": 138.3,
+    "kicked": true
+   },
+   {
+    "n": 8,
+    "moved12f": 138.3,
+    "kicked": true
+   },
+   {
+    "n": 9,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 10,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 11,
+    "moved12f": 138.3,
+    "kicked": true
+   },
+   {
+    "n": 12,
+    "moved12f": 138.3,
+    "kicked": true
+   }
+  ]
+ },
+ "A_c2b_ballFront_P1_space": {
+  "file": "build/gameplay/variants/c2b_two_players_branch.sb3",
+  "preFrontBeforeFlag": [
+   "Ball"
+  ],
+  "secondFlag": false,
+  "kicker": "Player",
+  "layersBottomToTop": "Stage>Goal>Goalie>Player>Player2>Ball",
+  "threadOrder": "Ball,Ball,Player2,Player,Goalie",
+  "kicked": 10,
+  "attempts": 12,
+  "rows": [
+   {
+    "n": 1,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 2,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 3,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 4,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 5,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 6,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 7,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 8,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 9,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 10,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 11,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 12,
+    "moved12f": 150,
+    "kicked": true
+   }
+  ]
+ },
+ "B_ref_goto_playerFront": {
+  "file": "build/gameplay/variants/x_ref_ball_gotofront.sb3",
+  "preFrontBeforeFlag": [
+   "Player"
+  ],
+  "secondFlag": false,
+  "kicker": "Player",
+  "layersBottomToTop": "Stage>Goal>Goalie>Player>Ball",
+  "threadOrder": "Player,Ball,Ball,Goalie",
+  "kicked": 0,
+  "attempts": 12,
+  "rows": [
+   {
+    "n": 1,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 2,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 3,
+    "moved12f": 0,
+    "kicked": false
+   },
+   {
+    "n": 4,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 5,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 6,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 7,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 8,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 9,
+    "moved12f": 0,
+    "kicked": false
+   },
+   {
+    "n": 10,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 11,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 12,
+    "moved12f": 6,
+    "kicked": false
+   }
+  ]
+ },
+ "B_ref_goto_playerFront_2ndFlag": {
+  "file": "build/gameplay/variants/x_ref_ball_gotofront.sb3",
+  "preFrontBeforeFlag": [
+   "Player"
+  ],
+  "secondFlag": true,
+  "kicker": "Player",
+  "layersBottomToTop": "Stage>Goal>Goalie>Player>Ball",
+  "threadOrder": "Ball,Ball,Player,Goalie",
+  "kicked": 10,
+  "attempts": 12,
+  "rows": [
+   {
+    "n": 1,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 2,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 3,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 4,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 5,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 6,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 7,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 8,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 9,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 10,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 11,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 12,
+    "moved12f": 150,
+    "kicked": true
+   }
+  ]
+ },
+ "ctrl_ref_playerFront": {
+  "file": "KeenKids_Soccer_Striker_Teacher_Reference.sb3",
+  "preFrontBeforeFlag": [
+   "Player"
+  ],
+  "secondFlag": false,
+  "kicker": "Player",
+  "layersBottomToTop": "Stage>Goal>Goalie>Ball>Player",
+  "threadOrder": "Player,Ball,Ball,Goalie",
+  "kicked": 0,
+  "attempts": 12,
+  "rows": [
+   {
+    "n": 1,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 2,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 3,
+    "moved12f": 0,
+    "kicked": false
+   },
+   {
+    "n": 4,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 5,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 6,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 7,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 8,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 9,
+    "moved12f": 0,
+    "kicked": false
+   },
+   {
+    "n": 10,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 11,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 12,
+    "moved12f": 6,
+    "kicked": false
+   }
+  ]
+ },
+ "ctrl_ref_default": {
+  "file": "KeenKids_Soccer_Striker_Teacher_Reference.sb3",
+  "preFrontBeforeFlag": [],
+  "secondFlag": false,
+  "kicker": "Player",
+  "layersBottomToTop": "Stage>Goal>Goalie>Player>Ball",
+  "threadOrder": "Ball,Ball,Player,Goalie",
+  "kicked": 10,
+  "attempts": 12,
+  "rows": [
+   {
+    "n": 1,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 2,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 3,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 4,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 5,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 6,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 7,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 8,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 9,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 10,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 11,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 12,
+    "moved12f": 150,
+    "kicked": true
+   }
+  ]
+ },
+ "B_c2b_goto_P2_F": {
+  "file": "build/gameplay/variants/x_c2b_ball_gotofront.sb3",
+  "preFrontBeforeFlag": [],
+  "secondFlag": false,
+  "kicker": "Player2",
+  "layersBottomToTop": "Stage>Goal>Goalie>Player>Player2>Ball",
+  "threadOrder": "Player2,Ball,Ball,Player,Goalie",
+  "kicked": 0,
+  "attempts": 12,
+  "rows": [
+   {
+    "n": 1,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 2,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 3,
+    "moved12f": 0,
+    "kicked": false
+   },
+   {
+    "n": 4,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 5,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 6,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 7,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 8,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 9,
+    "moved12f": 0,
+    "kicked": false
+   },
+   {
+    "n": 10,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 11,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 12,
+    "moved12f": 6,
+    "kicked": false
+   }
+  ]
+ },
+ "B_c2b_goto_P2_F_2ndFlag": {
+  "file": "build/gameplay/variants/x_c2b_ball_gotofront.sb3",
+  "preFrontBeforeFlag": [],
+  "secondFlag": true,
+  "kicker": "Player2",
+  "layersBottomToTop": "Stage>Goal>Goalie>Player>Player2>Ball",
+  "threadOrder": "Ball,Ball,Player2,Player,Goalie",
+  "kicked": 10,
+  "attempts": 12,
+  "rows": [
+   {
+    "n": 1,
+    "moved12f": 138.4,
+    "kicked": true
+   },
+   {
+    "n": 2,
+    "moved12f": 138.4,
+    "kicked": true
+   },
+   {
+    "n": 3,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 4,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 5,
+    "moved12f": 138.3,
+    "kicked": true
+   },
+   {
+    "n": 6,
+    "moved12f": 138.3,
+    "kicked": true
+   },
+   {
+    "n": 7,
+    "moved12f": 138.3,
+    "kicked": true
+   },
+   {
+    "n": 8,
+    "moved12f": 138.3,
+    "kicked": true
+   },
+   {
+    "n": 9,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 10,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 11,
+    "moved12f": 138.3,
+    "kicked": true
+   },
+   {
+    "n": 12,
+    "moved12f": 138.3,
+    "kicked": true
+   }
+  ]
+ },
+ "B_c2b_goto_P1_space": {
+  "file": "build/gameplay/variants/x_c2b_ball_gotofront.sb3",
+  "preFrontBeforeFlag": [],
+  "secondFlag": false,
+  "kicker": "Player",
+  "layersBottomToTop": "Stage>Goal>Goalie>Player>Player2>Ball",
+  "threadOrder": "Player2,Ball,Ball,Player,Goalie",
+  "kicked": 10,
+  "attempts": 12,
+  "rows": [
+   {
+    "n": 1,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 2,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 3,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 4,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 5,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 6,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 7,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 8,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 9,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 10,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 11,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 12,
+    "moved12f": 150,
+    "kicked": true
+   }
+  ]
+ }
+}

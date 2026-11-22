@@ -1,0 +1,135 @@
+[
+ {
+  "n": 2,
+  "touchingAtPress": false,
+  "edgeGapAtPress": 5.13,
+  "ballMoved12f": 144,
+  "kicked": true
+ },
+ {
+  "n": 3,
+  "touchingAtPress": true,
+  "edgeGapAtPress": 0.13,
+  "ballMoved12f": 6,
+  "kicked": false
+ },
+ {
+  "n": 4,
+  "touchingAtPress": false,
+  "edgeGapAtPress": 1.13,
+  "ballMoved12f": 144,
+  "kicked": true
+ },
+ {
+  "n": 5,
+  "touchingAtPress": true,
+  "edgeGapAtPress": -3.87,
+  "ballMoved12f": 150,
+  "kicked": true
+ },
+ {
+  "n": 6,
+  "touchingAtPress": true,
+  "edgeGapAtPress": -2.88,
+  "ballMoved12f": 150,
+  "kicked": true
+ },
+ {
+  "n": 7,
+  "touchingAtPress": true,
+  "edgeGapAtPress": -1.88,
+  "ballMoved12f": 150,
+  "kicked": true
+ },
+ {
+  "n": 8,
+  "touchingAtPress": true,
+  "edgeGapAtPress": -0.88,
+  "ballMoved12f": 150,
+  "kicked": true
+ },
+ {
+  "n": 9,
+  "touchingAtPress": true,
+  "edgeGapAtPress": 0.12,
+  "ballMoved12f": 6,
+  "kicked": false
+ },
+ {
+  "n": 10,
+  "touchingAtPress": false,
+  "edgeGapAtPress": 1.12,
+  "ballMoved12f": 144,
+  "kicked": true
+ },
+ {
+  "n": 11,
+  "touchingAtPress": true,
+  "edgeGapAtPress": -3.88,
+  "ballMoved12f": 150,
+  "kicked": true
+ },
+ {
+  "n": 12,
+  "touchingAtPress": true,
+  "edgeGapAtPress": -2.88,
+  "ballMoved12f": 150,
+  "kicked": true
+ },
+ {
+  "n": 13,
+  "touchingAtPress": true,
+  "edgeGapAtPress": -1.88,
+  "ballMoved12f": 150,
+  "kicked": true
+ },
+ {
+  "n": 14,
+  "touchingAtPress": true,
+  "edgeGapAtPress": -0.88,
+  "ballMoved12f": 150,
+  "kicked": true
+ },
+ {
+  "n": 15,
+  "touchingAtPress": true,
+  "edgeGapAtPress": 0.12,
+  "ballMoved12f": 6,
+  "kicked": false
+ },
+ {
+  "n": 16,
+  "touchingAtPress": false,
+  "edgeGapAtPress": 1.12,
+  "ballMoved12f": 144,
+  "kicked": true
+ },
+ {
+  "n": 17,
+  "touchingAtPress": true,
+  "edgeGapAtPress": -3.88,
+  "ballMoved12f": 150,
+  "kicked": true
+ },
+ {
+  "n": 18,
+  "touchingAtPress": true,
+  "edgeGapAtPress": -2.88,
+  "ballMoved12f": 150,
+  "kicked": true
+ },
+ {
+  "n": 19,
+  "touchingAtPress": true,
+  "edgeGapAtPress": -1.88,
+  "ballMoved12f": 150,
+  "kicked": true
+ },
+ {
+  "n": 20,
+  "touchingAtPress": true,
+  "edgeGapAtPress": -0.88,
+  "ballMoved12f": 150,
+  "kicked": true
+ }
+]

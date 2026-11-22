@@ -1,0 +1,85 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Scratch harness</title>
+<style>body{margin:0;background:#222}canvas{width:480px;height:360px;display:block}</style>
+<script src="lib/scratch-storage.js"></script>
+<script src="lib/scratch-render.js"></script>
+<script src="lib/scratch-vm.js"></script>
+</head><body><canvas id="c" width="480" height="360"></canvas>
+<script>
+// Page-side test API. All game logic runs in the real scratch-vm + scratch-render.
+const H = window.H = {
+  frame: 0, recording: false, log: [], says: [], events: [], waiters: [], t0: 0,
+  async load(url) {
+    const buf = await (await fetch(url)).arrayBuffer();
+    const vm = this.vm = new VirtualMachine();
+    const St = ScratchStorage.ScratchStorage || ScratchStorage.default || ScratchStorage;
+    vm.attachStorage(new St());
+    const R = ScratchRender.default || ScratchRender;
+    const renderer = this.renderer = new R(document.getElementById('c'));
+    vm.attachRenderer(renderer);
+    renderer.resize(480, 360);
+    await vm.loadProject(buf);
+    const rt = this.rt = vm.runtime;
+    rt.on('SAY', (target, type, text) => {
+      this.says.push({ frame: this.frame, ms: Math.round(performance.now() - this.t0), sprite: target.sprite.name, type, text });
+    });
+    rt.on('PROJECT_STOP_ALL', () => this.events.push({ ev: 'STOP_ALL', frame: this.frame, ms: Math.round(performance.now() - this.t0) }));
+    rt.on('PROJECT_RUN_STOP', () => this.events.push({ ev: 'RUN_STOP', frame: this.frame, ms: Math.round(performance.now() - this.t0) }));
+    const orig = rt._step.bind(rt);
+    rt._step = () => {
+      orig();
+      this.frame++;
+      renderer.draw();
+      if (this.recording) this.log.push(this.snap());
+      for (const fn of this.onFrame) fn(this.frame);
+      this.waiters = this.waiters.filter(w => { if (w.check()) { w.resolve(this.frame); return false; } return true; });
+    };
+    this.onFrame = [];
+    // give SVG skins a moment to rasterize
+    await new Promise(r => setTimeout(r, 300));
+    return rt.targets.map(t => t.getName());
+  },
+  // Scratch 3 GUI runs the VM in compatibility mode (30 fps); the bare VM defaults to 60 fps.
+  start(fps30 = true) { this.vm.setCompatibilityMode(fps30); this.t0 = performance.now(); this.vm.start(); this.vm.greenFlag(); },
+  greenFlag() { this.vm.greenFlag(); },
+  T(name) { return this.rt.getSpriteTargetByName(name); },
+  stage() { return this.rt.getTargetForStage(); },
+  v(name) { const s = this.stage(); for (const id in s.variables) if (s.variables[id].name === name) return s.variables[id].value; return undefined; },
+  snap() {
+    const o = { frame: this.frame, ms: Math.round(performance.now() - this.t0), threads: this.rt.threads.length, vars: {}, s: {} };
+    for (const t of this.rt.targets) {
+      if (t.isStage) { for (const id in t.variables) if (t.variables[id].type === '') o.vars[t.variables[id].name] = t.variables[id].value; continue; }
+      const st = t.getCustomState('Scratch.looks');
+      o.s[t.getName()] = { x: +t.x.toFixed(3), y: +t.y.toFixed(3), dir: +t.direction.toFixed(3), size: t.size, bubble: st && st.text ? st.text : '' };
+    }
+    return o;
+  },
+  key(key, isDown) { this.vm.postIOData('keyboard', { key, isDown }); },
+  touching(a, b) { return this.T(a).isTouchingSprite(b); },
+  set(name, x, y, dir) { const t = this.T(name); t.setXY(x, y); if (dir !== undefined) t.setDirection(dir); },
+  bounds(name) { const b = this.T(name).getBounds(); return { left: +b.left.toFixed(2), right: +b.right.toFixed(2), top: +b.top.toFixed(2), bottom: +b.bottom.toFixed(2) }; },
+  frames(n) { const target = this.frame + n; return new Promise(resolve => this.waiters.push({ check: () => this.frame >= target, resolve })); },
+  until(pred, max = 300) { const lim = this.frame + max; return new Promise(resolve => this.waiters.push({ check: () => { if (pred()) return true; if (this.frame >= lim) { resolve(null); return true; } return false; }, resolve })); },
+  // capture stage: 1x (480x360) and 2x (960x720). Page DPR must be 2.
+  capture() {
+    const r = this.renderer, c = r._gl.canvas, out = {};
+    r.resize(480 / devicePixelRatio, 360 / devicePixelRatio); r.draw(); out.x1 = c.toDataURL('image/png');
+    r.resize(960 / devicePixelRatio, 720 / devicePixelRatio); r.draw(); out.x2 = c.toDataURL('image/png');
+    r.resize(480, 360); r.draw();
+    return out;
+  },
+  // Realistic kick: teleport Player and Ball (ball just ahead, not touching), hold right arrow until the
+  // ball touches the player, press space while still running, then release both keys after one frame.
+  // (Pressing space while standing still does not work: the Ball's dribble loop runs before the kick
+  //  thread in the frame and pushes the ball 6 px out of contact first.)
+  async kickFrom(px, py, gap = 38) {
+    this.set('Player', px, py, 90); this.set('Ball', px + gap, py);
+    this.key('ArrowRight', true);
+    const ok = await this.until(() => this.touching('Ball', 'Player'), 30);
+    const pre = this.snap();
+    this.key(' ', true); await this.frames(1); this.key(' ', false); this.key('ArrowRight', false);
+    return { touchedAtFrame: ok, pre, post1: this.snap() };
+  },
+  stop() { this.vm.stopAll(); this.vm.runtime.quit && clearInterval(this.rt._steppingInterval); }
+};
+</script></body></html>

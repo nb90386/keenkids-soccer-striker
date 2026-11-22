@@ -1,0 +1,835 @@
+{
+ "c1_speed_boots": {
+  "speed": {
+   "zPlusRight": {
+    "keys": [
+     "z",
+     "ArrowRight"
+    ],
+    "perFrame": [
+     9
+    ],
+    "end": {
+     "x": -10,
+     "y": -60,
+     "dir": 90,
+     "size": 60,
+     "bubble": ""
+    }
+   },
+   "rightOnly": {
+    "keys": [
+     "ArrowRight"
+    ],
+    "perFrame": [
+     5
+    ],
+    "end": {
+     "x": -50,
+     "y": -60,
+     "dir": 90,
+     "size": 60,
+     "bubble": ""
+    }
+   },
+   "zOnlyFacingRight": {
+    "keys": [
+     "z"
+    ],
+    "perFrame": [
+     4
+    ],
+    "end": {
+     "x": -60,
+     "y": -60,
+     "dir": 90,
+     "size": 60,
+     "bubble": ""
+    }
+   },
+   "zPlusUp": {
+    "keys": [
+     "z",
+     "ArrowUp"
+    ],
+    "perFrame": [
+     9
+    ],
+    "end": {
+     "x": -100,
+     "y": 30,
+     "dir": 0,
+     "size": 60,
+     "bubble": ""
+    }
+   }
+  },
+  "c1_speed_boots": {
+   "says": [],
+   "ballMinusPlayerX": [
+    41,
+    32,
+    29,
+    26,
+    23,
+    20,
+    17,
+    14,
+    11,
+    8,
+    5,
+    2,
+    -1,
+    -4,
+    -7,
+    -10,
+    -13,
+    -16,
+    -19,
+    -22,
+    -25,
+    -28,
+    -31,
+    -34,
+    -37,
+    -46,
+    -55,
+    -64,
+    -73,
+    -82,
+    -91,
+    -100,
+    -109,
+    -118,
+    -127,
+    -136,
+    -145,
+    -154,
+    -163,
+    -172
+   ],
+   "ballStepsPerFrame": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "firstFrameBallBehindPlayer": 12,
+   "end": {
+    "playerX": 190,
+    "ballX": 18,
+    "touching": false
+   },
+   "lostContactFramesAfterFirstTouch": 16
+  },
+  "c1_speed_boots_dribble10": {
+   "says": [
+    "Saved!@frame36"
+   ],
+   "ballMinusPlayerX": [
+    41,
+    32,
+    33,
+    34,
+    35,
+    36,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    25,
+    16,
+    7,
+    -2,
+    -11,
+    -20
+   ],
+   "ballStepsPerFrame": [
+    0,
+    10,
+    10,
+    10,
+    10,
+    0,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    0,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    0,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "firstFrameBallBehindPlayer": 37,
+   "end": {
+    "playerX": 190,
+    "ballX": 170,
+    "touching": true
+   },
+   "lostContactFramesAfterFirstTouch": 3
+  },
+  "pass": true
+ },
+ "c2_two_players": {
+  "c2a_two_players_or": {
+   "p2DribbleSummary": {
+    "ballDirsWhileMoving": [
+     90
+    ],
+    "ballStepValues": [
+     0,
+     6
+    ],
+    "player1Dir": 90,
+    "player2Dir": -90,
+    "start": {
+     "ballX": 60,
+     "p2X": 120
+    },
+    "end": {
+     "ballX": 96,
+     "p2X": -30
+    },
+    "ballEndsBehindP2": true
+   },
+   "p1Dribble": {
+    "ballDx": 132,
+    "ballDir": 90
+   },
+   "fNotTouching": {
+    "touchingP2": false,
+    "before": [
+     -120,
+     0
+    ],
+    "after": [
+     -120,
+     0
+    ]
+   },
+   "fKickSweep": [
+    {
+     "n": 1,
+     "touchingAtPress": true,
+     "ballAtPress": [
+      -92,
+      120
+     ],
+     "ballEnd": [
+      148.808,
+      28.516
+     ],
+     "ballDirEnd": 111.286,
+     "dist": 257.6,
+     "expectedDirFromBallAtPress": 110.92,
+     "says": [],
+     "kicked": true
+    },
+    {
+     "n": 2,
+     "touchingAtPress": true,
+     "ballAtPress": [
+      -86,
+      120
+     ],
+     "ballEnd": [
+      154.189,
+      26.945
+     ],
+     "ballDirEnd": 111.67,
+     "dist": 257.58,
+     "expectedDirFromBallAtPress": 111.29,
+     "says": [
+      "Saved!"
+     ],
+     "kicked": true
+    },
+    {
+     "n": 3,
+     "touchingAtPress": true,
+     "ballAtPress": [
+      -80,
+      120
+     ],
+     "ballEnd": [
+      159.538,
+      25.322
+     ],
+     "ballDirEnd": 112.068,
+     "dist": 257.57,
+     "expectedDirFromBallAtPress": 111.67,
+     "says": [
+      "Saved!"
+     ],
+     "kicked": true
+    },
+    {
+     "n": 4,
+     "touchingAtPress": true,
+     "ballAtPress": [
+      -74,
+      120
+     ],
+     "ballEnd": [
+      164.852,
+      23.647
+     ],
+     "ballDirEnd": 112.479,
+     "dist": 257.55,
+     "expectedDirFromBallAtPress": 112.07,
+     "says": [
+      "Saved!"
+     ],
+     "kicked": true
+    },
+    {
+     "n": 5,
+     "touchingAtPress": true,
+     "ballAtPress": [
+      -68,
+      120
+     ],
+     "ballEnd": [
+      170.129,
+      21.917
+     ],
+     "ballDirEnd": 112.906,
+     "dist": 257.54,
+     "expectedDirFromBallAtPress": 112.48,
+     "says": [
+      "Saved!"
+     ],
+     "kicked": true
+    },
+    {
+     "n": 6,
+     "touchingAtPress": true,
+     "ballAtPress": [
+      -62,
+      120
+     ],
+     "ballEnd": [
+      -56,
+      120
+     ],
+     "ballDirEnd": 90,
+     "dist": 6,
+     "expectedDirFromBallAtPress": 112.91,
+     "says": [],
+     "kicked": false
+    },
+    {
+     "n": 7,
+     "touchingAtPress": false,
+     "ballAtPress": [
+      -56,
+      120
+     ],
+     "ballEnd": [
+      -56,
+      120
+     ],
+     "ballDirEnd": 90,
+     "dist": 0,
+     "expectedDirFromBallAtPress": 113.35,
+     "says": [],
+     "kicked": false
+    },
+    {
+     "n": 8,
+     "touchingAtPress": false,
+     "ballAtPress": [
+      -56,
+      120
+     ],
+     "ballEnd": [
+      -56,
+      120
+     ],
+     "ballDirEnd": 90,
+     "dist": 0,
+     "expectedDirFromBallAtPress": 113.35,
+     "says": [],
+     "kicked": false
+    },
+    {
+     "n": 9,
+     "touchingAtPress": false,
+     "ballAtPress": [
+      -56,
+      120
+     ],
+     "ballEnd": [
+      -56,
+      120
+     ],
+     "ballDirEnd": 90,
+     "dist": 0,
+     "expectedDirFromBallAtPress": 113.35,
+     "says": [],
+     "kicked": false
+    }
+   ],
+   "spaceWithOnlyP2": {
+    "touchingP2AtPress": true,
+    "moved": 30
+   }
+  },
+  "c2b_two_players_branch": {
+   "p2DribbleSummary": {
+    "ballDirsWhileMoving": [
+     -90
+    ],
+    "ballStepValues": [
+     0,
+     -6
+    ],
+    "player1Dir": 90,
+    "player2Dir": -90,
+    "start": {
+     "ballX": 60,
+     "p2X": 120
+    },
+    "end": {
+     "ballX": -66,
+     "p2X": -30
+    },
+    "ballEndsBehindP2": false
+   },
+   "p1Dribble": {
+    "ballDx": 132,
+    "ballDir": 90
+   },
+   "fNotTouching": {
+    "touchingP2": false,
+    "before": [
+     -120,
+     0
+    ],
+    "after": [
+     -120,
+     0
+    ]
+   },
+   "fKickSweep": [
+    {
+     "n": 1,
+     "touchingAtPress": false,
+     "ballAtPress": [
+      -104,
+      120
+     ],
+     "ballEnd": [
+      -110,
+      120
+     ],
+     "ballDirEnd": -90,
+     "dist": 6,
+     "expectedDirFromBallAtPress": 110.21,
+     "says": [],
+     "kicked": false
+    },
+    {
+     "n": 2,
+     "touchingAtPress": false,
+     "ballAtPress": [
+      -110,
+      120
+     ],
+     "ballEnd": [
+      -116,
+      120
+     ],
+     "ballDirEnd": -90,
+     "dist": 6,
+     "expectedDirFromBallAtPress": 109.87,
+     "says": [],
+     "kicked": false
+    },
+    {
+     "n": 3,
+     "touchingAtPress": false,
+     "ballAtPress": [
+      -116,
+      120
+     ],
+     "ballEnd": [
+      -116,
+      120
+     ],
+     "ballDirEnd": -90,
+     "dist": 0,
+     "expectedDirFromBallAtPress": 109.55,
+     "says": [],
+     "kicked": false
+    },
+    {
+     "n": 4,
+     "touchingAtPress": false,
+     "ballAtPress": [
+      -116,
+      120
+     ],
+     "ballEnd": [
+      -122,
+      120
+     ],
+     "ballDirEnd": -90,
+     "dist": 6,
+     "expectedDirFromBallAtPress": 109.55,
+     "says": [],
+     "kicked": false
+    },
+    {
+     "n": 5,
+     "touchingAtPress": false,
+     "ballAtPress": [
+      -122,
+      120
+     ],
+     "ballEnd": [
+      -128,
+      120
+     ],
+     "ballDirEnd": -90,
+     "dist": 6,
+     "expectedDirFromBallAtPress": 109.23,
+     "says": [],
+     "kicked": false
+    },
+    {
+     "n": 6,
+     "touchingAtPress": false,
+     "ballAtPress": [
+      -128,
+      120
+     ],
+     "ballEnd": [
+      -134,
+      120
+     ],
+     "ballDirEnd": -90,
+     "dist": 6,
+     "expectedDirFromBallAtPress": 108.92,
+     "says": [],
+     "kicked": false
+    },
+    {
+     "n": 7,
+     "touchingAtPress": false,
+     "ballAtPress": [
+      -134,
+      120
+     ],
+     "ballEnd": [
+      -140,
+      120
+     ],
+     "ballDirEnd": -90,
+     "dist": 6,
+     "expectedDirFromBallAtPress": 108.63,
+     "says": [],
+     "kicked": false
+    },
+    {
+     "n": 8,
+     "touchingAtPress": false,
+     "ballAtPress": [
+      -140,
+      120
+     ],
+     "ballEnd": [
+      -146,
+      120
+     ],
+     "ballDirEnd": -90,
+     "dist": 6,
+     "expectedDirFromBallAtPress": 108.34,
+     "says": [],
+     "kicked": false
+    },
+    {
+     "n": 9,
+     "touchingAtPress": false,
+     "ballAtPress": [
+      -146,
+      120
+     ],
+     "ballEnd": [
+      -146,
+      120
+     ],
+     "ballDirEnd": -90,
+     "dist": 0,
+     "expectedDirFromBallAtPress": 108.06,
+     "says": [],
+     "kicked": false
+    }
+   ],
+   "spaceWithOnlyP2": {
+    "touchingP2AtPress": false,
+    "moved": 6
+   }
+  }
+ },
+ "c3_friction": {
+  "kicks": [
+   {
+    "project": "c3",
+    "from": [
+     -170,
+     0
+    ],
+    "totalDistance": 144,
+    "perFrameSteps": [
+     78,
+     11,
+     10,
+     9,
+     8,
+     7,
+     6,
+     5,
+     4,
+     3,
+     2,
+     1
+    ],
+    "framesUntilStill": 24,
+    "kickSpeedFinal": 0
+   },
+   {
+    "project": "c3",
+    "from": [
+     -190,
+     120
+    ],
+    "totalDistance": 143.72,
+    "perFrameSteps": [
+     77.73,
+     11,
+     10,
+     9,
+     8,
+     7,
+     6,
+     5,
+     4,
+     3,
+     2,
+     1
+    ],
+    "framesUntilStill": 23,
+    "kickSpeedFinal": 0
+   },
+   {
+    "project": "reference",
+    "from": [
+     -170,
+     0
+    ],
+    "totalDistance": 258,
+    "perFrameSteps": [
+     78,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12
+    ],
+    "framesUntilStill": 31
+   },
+   {
+    "project": "reference",
+    "from": [
+     -190,
+     120
+    ],
+    "totalDistance": 257.71,
+    "perFrameSteps": [
+     77.73,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12
+    ],
+    "framesUntilStill": 31
+   }
+  ]
+ },
+ "c4_golden": {
+  "c4_golden_goal": {
+   "run1": {
+    "gg0": "0",
+    "atGoldenMs": 3217,
+    "timeAtGolden": 0,
+    "ggAt": "1",
+    "running": {
+     "threads": 3,
+     "goalieMoved": true,
+     "playerMovedWithKey": 50,
+     "time": 0
+    },
+    "saysAfterGoal": [
+     "GOAL!",
+     "YOU WIN!"
+    ],
+    "scoreEnd": 1,
+    "threadsEnd": 0,
+    "ggEnd": "1"
+   },
+   "run2": {
+    "ggAfterFlag": "0",
+    "timeAtKick": 2,
+    "says": [
+     "GOAL!",
+     "GOLDEN GOAL!"
+    ],
+    "score": 1,
+    "stoppedAfterGoal": false,
+    "threads": 4,
+    "time": 0
+   }
+  },
+  "c4_golden_goal_no_reset": {
+   "run1": {
+    "gg0": 0,
+    "atGoldenMs": 3226,
+    "timeAtGolden": 0,
+    "ggAt": "1",
+    "running": {
+     "threads": 3,
+     "goalieMoved": true,
+     "playerMovedWithKey": 50,
+     "time": 0
+    },
+    "saysAfterGoal": [
+     "GOAL!",
+     "YOU WIN!"
+    ],
+    "scoreEnd": 1,
+    "threadsEnd": 0,
+    "ggEnd": "1"
+   },
+   "run2": {
+    "ggAfterFlag": "1",
+    "timeAtKick": 2,
+    "says": [
+     "GOAL!",
+     "YOU WIN!",
+     "GOLDEN GOAL!"
+    ],
+    "score": 1,
+    "stoppedAfterGoal": true,
+    "threads": 0,
+    "time": 0
+   }
+  },
+  "note": "Time shortened to 3 s in both variants (set Time to 3)."
+ }
+}

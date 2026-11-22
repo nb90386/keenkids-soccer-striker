@@ -1,0 +1,905 @@
+[
+  {
+    "slide": 1,
+    "type": "cover",
+    "step": null,
+    "title": "Soccer Striker!",
+    "code_blocks": [],
+    "notes": "Open Scratch at scratch.mit.edu and start a new blank project. Tell students that today they will make a game with a player, a soccer ball, a goalie, goals, a score, and a countdown timer."
+  },
+  {
+    "slide": 2,
+    "type": "mission",
+    "step": null,
+    "title": "Your mission today",
+    "code_blocks": [],
+    "notes": "Ask students to predict which Scratch features each action needs: key sensing, loops, and variables. No code on this slide."
+  },
+  {
+    "slide": 3,
+    "type": "chapter",
+    "step": null,
+    "title": "Build your soccer field",
+    "code_blocks": [],
+    "notes": "The stage is the background. Sprites are game characters or objects that can move."
+  },
+  {
+    "slide": 4,
+    "type": "setup",
+    "step": "01",
+    "title": "Wave goodbye to the Cat",
+    "code_blocks": [],
+    "notes": "Students should start with a blank Scratch project. The uploaded reference project already has custom sprites; do not delete those if opening the finished file."
+  },
+  {
+    "slide": 5,
+    "type": "setup",
+    "step": "02",
+    "title": "Paint your pitch",
+    "code_blocks": [],
+    "notes": "Use a thick white brush. The stage in Scratch is 480 by 360 pixels. Keep the right edge clear enough for the Goal sprite."
+  },
+  {
+    "slide": 6,
+    "type": "setup",
+    "step": "03",
+    "title": "Choose your Player",
+    "code_blocks": [],
+    "notes": "Point out the sprite name text box below the stage. The name Player is important because Ball scripts will look for that exact sprite."
+  },
+  {
+    "slide": 7,
+    "type": "lesson",
+    "step": "04",
+    "title": "Start on the left",
+    "code_blocks": [
+      [
+        "Events",
+        "when green flag clicked"
+      ],
+      [
+        "Motion",
+        "go to x: -170  y: 0"
+      ]
+    ],
+    "notes": "Select Player. Snap the blue go-to block under the yellow event block. Show that negative x means left of center."
+  },
+  {
+    "slide": 8,
+    "type": "lesson",
+    "step": "05",
+    "title": "Face the goal",
+    "code_blocks": [
+      [
+        "Motion",
+        "point in direction 90"
+      ],
+      [
+        "Looks",
+        "set size to 60 %"
+      ]
+    ],
+    "notes": "Add both blocks under the Player flag stack. The Player looks right and fits on the pitch. Optional: set rotation style to left-right so the sprite does not flip upside down."
+  },
+  {
+    "slide": 9,
+    "type": "lesson",
+    "step": "06",
+    "title": "Keep checking!",
+    "code_blocks": [
+      [
+        "Control",
+        "forever"
+      ]
+    ],
+    "notes": "Snap forever underneath Player setup. Every arrow-key if block goes INSIDE forever. Do not put the forever beneath another forever."
+  },
+  {
+    "slide": 10,
+    "type": "chapter",
+    "step": null,
+    "title": "Control your player",
+    "code_blocks": [],
+    "notes": "Students already have a Player flag stack with a forever loop. These slides insert code inside that loop."
+  },
+  {
+    "slide": 11,
+    "type": "lesson",
+    "step": "07",
+    "title": "Right arrow → right",
+    "code_blocks": [
+      [
+        "Control",
+        "if <key [right arrow] pressed?> then"
+      ],
+      [
+        "Motion",
+        "point in direction 90"
+      ],
+      [
+        "Motion",
+        "move 5 steps"
+      ]
+    ],
+    "notes": "Place an if block inside Player forever. Insert a Sensing key-pressed hexagon into the if. Put point direction 90 and move 5 inside."
+  },
+  {
+    "slide": 12,
+    "type": "lesson",
+    "step": "08",
+    "title": "Left arrow → left",
+    "code_blocks": [
+      [
+        "Control",
+        "if <key [left arrow] pressed?> then"
+      ],
+      [
+        "Motion",
+        "point in direction -90"
+      ],
+      [
+        "Motion",
+        "move 5 steps"
+      ]
+    ],
+    "notes": "Add a NEW if below the right-arrow if inside forever, not inside the right-arrow if."
+  },
+  {
+    "slide": 13,
+    "type": "lesson",
+    "step": "09",
+    "title": "Up arrow → up",
+    "code_blocks": [
+      [
+        "Control",
+        "if <key [up arrow] pressed?> then"
+      ],
+      [
+        "Motion",
+        "point in direction 0"
+      ],
+      [
+        "Motion",
+        "move 5 steps"
+      ]
+    ],
+    "notes": "Scratch directions are unusual: 0 = up, 90 = right, 180 = down, -90 = left. Students can write a compass on paper."
+  },
+  {
+    "slide": 14,
+    "type": "lesson",
+    "step": "10",
+    "title": "Down arrow → down",
+    "code_blocks": [
+      [
+        "Control",
+        "if <key [down arrow] pressed?> then"
+      ],
+      [
+        "Motion",
+        "point in direction 180"
+      ],
+      [
+        "Motion",
+        "move 5 steps"
+      ]
+    ],
+    "notes": "Add the fourth separate if. Run game and press each arrow to debug directions."
+  },
+  {
+    "slide": 15,
+    "type": "lesson",
+    "step": "11",
+    "title": "Stay on the field",
+    "code_blocks": [
+      [
+        "Motion",
+        "if on edge, bounce"
+      ]
+    ],
+    "notes": "Place this block at the bottom INSIDE Player forever, after the four arrow-key if blocks."
+  },
+  {
+    "slide": 16,
+    "type": "check",
+    "step": null,
+    "title": "First play test",
+    "code_blocks": [],
+    "notes": "Pause for one-minute student test. If controls do not work, confirm each if is inside forever and the code is on Player."
+  },
+  {
+    "slide": 17,
+    "type": "chapter",
+    "step": null,
+    "title": "Make the ball move",
+    "code_blocks": [],
+    "notes": "Students switch from Player to Ball. Different sprites have different scripts."
+  },
+  {
+    "slide": 18,
+    "type": "setup",
+    "step": "12",
+    "title": "Add the soccer ball",
+    "code_blocks": [],
+    "notes": "Exact sprite name must be Ball. In some versions, a Soccer Ball sprite may be available or students can paint a circle."
+  },
+  {
+    "slide": 19,
+    "type": "lesson",
+    "step": "13",
+    "title": "Set up the Ball",
+    "code_blocks": [
+      [
+        "Events",
+        "when green flag clicked"
+      ],
+      [
+        "Motion",
+        "go to x: -120  y: 0"
+      ],
+      [
+        "Control",
+        "forever"
+      ]
+    ],
+    "notes": "Select Ball, not Player. Make a new green flag stack. Keep the score reset in this same flag stack later."
+  },
+  {
+    "slide": 20,
+    "type": "lesson",
+    "step": "14",
+    "title": "Only dribble when close",
+    "code_blocks": [
+      [
+        "Control",
+        "if <touching [Player]?> then"
+      ]
+    ],
+    "notes": "Inside Ball forever, put if touching Player. Use light-blue Sensing block touching [Player]? (not touching mouse-pointer)."
+  },
+  {
+    "slide": 21,
+    "type": "lesson",
+    "step": "14",
+    "title": "Copy the Player’s direction",
+    "code_blocks": [
+      [
+        "Motion",
+        "point in direction (direction of [Player])"
+      ]
+    ],
+    "notes": "Critical: use Sensing reporter (x position of [Stage]) and change both dropdowns to direction of Player. Do not use Ball’s own direction bubble. This blue point block belongs inside the Ball touching Player if."
+  },
+  {
+    "slide": 22,
+    "type": "lesson",
+    "step": "15",
+    "title": "Give the Ball a push",
+    "code_blocks": [
+      [
+        "Motion",
+        "move 6 steps"
+      ]
+    ],
+    "notes": "Add move 6 inside the Ball touching Player if, directly below point in direction of Player. Do NOT add repeat 16 here; the uploaded example file accidentally has an extra repeat and it should be removed."
+  },
+  {
+    "slide": 23,
+    "type": "check",
+    "step": null,
+    "title": "Dribble test",
+    "code_blocks": [],
+    "notes": "If ball teleports or flies: check there is no repeat 16 inside Ball dribble if; make sure direction of Player and move 6 are the only movement blocks in that branch."
+  },
+  {
+    "slide": 24,
+    "type": "chapter",
+    "step": null,
+    "title": "Shoot and score",
+    "code_blocks": [],
+    "notes": "Explain events and conditions: Space is an event; touching Player is the condition that allows a kick."
+  },
+  {
+    "slide": 25,
+    "type": "setup",
+    "step": "16",
+    "title": "Paint the Goal",
+    "code_blocks": [],
+    "notes": "Sprite must be Goal (capital G). Make its frame thick enough for collision detection. Make sure it is a sprite, not only painted on the backdrop, so touching Goal can work."
+  },
+  {
+    "slide": 26,
+    "type": "lesson",
+    "step": "17",
+    "title": "Space begins a kick",
+    "code_blocks": [
+      [
+        "Events",
+        "when [space] key pressed"
+      ]
+    ],
+    "notes": "On Ball, start a NEW stack, separate from the Ball green-flag forever stack."
+  },
+  {
+    "slide": 27,
+    "type": "lesson",
+    "step": "17",
+    "title": "You must reach the Ball",
+    "code_blocks": [
+      [
+        "Control",
+        "if <touching [Player]?> then"
+      ]
+    ],
+    "notes": "Snap this condition under the space key event. Everything needed to kick goes INSIDE this if."
+  },
+  {
+    "slide": 28,
+    "type": "lesson",
+    "step": "18",
+    "title": "Aim at the Goal",
+    "code_blocks": [
+      [
+        "Motion",
+        "point towards [Goal]"
+      ]
+    ],
+    "notes": "This Motion block appears inside the Space key touching Player condition. Confirm the Goal sprite is named Goal to appear in the dropdown."
+  },
+  {
+    "slide": 29,
+    "type": "lesson",
+    "step": "19",
+    "title": "Pop the Ball forward",
+    "code_blocks": [
+      [
+        "Motion",
+        "move 60 steps"
+      ]
+    ],
+    "notes": "This is important. A small push might leave the Ball still touching Player, causing dribble code to interfere with the kick."
+  },
+  {
+    "slide": 30,
+    "type": "lesson",
+    "step": "19",
+    "title": "Make a powerful shot",
+    "code_blocks": [
+      [
+        "Control",
+        "repeat 16"
+      ],
+      [
+        "Motion",
+        "move 12 steps"
+      ],
+      [
+        "Control",
+        "wait 0.03 seconds"
+      ]
+    ],
+    "notes": "Put move 12 and wait 0.03 INSIDE repeat 16, which is inside the Space touching Player if, after move 60. A total possible shot distance is 60 + 16*12 = 252 Scratch steps."
+  },
+  {
+    "slide": 31,
+    "type": "check",
+    "step": null,
+    "title": "First shot test",
+    "code_blocks": [],
+    "notes": "Students may need to dribble past the halfway line first; the kick distance is intentional. If the ball leaps unexpectedly when walking, delete any repeat that was mistakenly placed in the dribble if."
+  },
+  {
+    "slide": 32,
+    "type": "chapter",
+    "step": null,
+    "title": "Keep score",
+    "code_blocks": [],
+    "notes": "A variable is a labeled number that can change during the game."
+  },
+  {
+    "slide": 33,
+    "type": "setup",
+    "step": "20",
+    "title": "Make a Score variable",
+    "code_blocks": [],
+    "notes": "Make Score available to all sprites. On the Stage in the supplied project, Score already exists."
+  },
+  {
+    "slide": 34,
+    "type": "lesson",
+    "step": "20",
+    "title": "Start at zero",
+    "code_blocks": [
+      [
+        "Variables",
+        "set [Score] to 0"
+      ]
+    ],
+    "notes": "Insert this at the beginning of Ball’s green flag stack, before or after the starting Ball position."
+  },
+  {
+    "slide": 35,
+    "type": "lesson",
+    "step": "21",
+    "title": "Did it touch the Goal?",
+    "code_blocks": [
+      [
+        "Control",
+        "if <touching [Goal]?> then"
+      ]
+    ],
+    "notes": "Inside Ball forever add a SECOND if after the dribble if. The goal detection belongs in the Ball sprite, not Goal."
+  },
+  {
+    "slide": 36,
+    "type": "lesson",
+    "step": "21",
+    "title": "Give the Player a point",
+    "code_blocks": [
+      [
+        "Variables",
+        "change [Score] by 1"
+      ],
+      [
+        "Looks",
+        "say [GOAL!] for 1 seconds"
+      ]
+    ],
+    "notes": "Put both INSIDE the touching Goal if. The say block pauses that stack briefly."
+  },
+  {
+    "slide": 37,
+    "type": "lesson",
+    "step": "21",
+    "title": "First to 3 wins!",
+    "code_blocks": [
+      [
+        "Control",
+        "if <(Score) = (3)> then"
+      ],
+      [
+        "Looks",
+        "say [GOAL! YOU WIN!] for 2 seconds"
+      ],
+      [
+        "Control",
+        "stop [all]"
+      ]
+    ],
+    "notes": "Use green Operators = and orange Score variable bubble inside the smaller if. Put it below the Score+1 and GOAL announcement, inside the Goal touching branch."
+  },
+  {
+    "slide": 38,
+    "type": "lesson",
+    "step": "22",
+    "title": "Reset the Ball",
+    "code_blocks": [
+      [
+        "Motion",
+        "go to x: 0  y: 0"
+      ],
+      [
+        "Events",
+        "broadcast [ResetPlayer]"
+      ]
+    ],
+    "notes": "In the Ball touching Goal if, BELOW the win check, reset Ball and send a new ResetPlayer message. Students must choose New Message and name it ResetPlayer exactly."
+  },
+  {
+    "slide": 39,
+    "type": "lesson",
+    "step": "22",
+    "title": "Reset the Player",
+    "code_blocks": [
+      [
+        "Events",
+        "when I receive [ResetPlayer]"
+      ],
+      [
+        "Motion",
+        "go to x: -170  y: 0"
+      ],
+      [
+        "Motion",
+        "point in direction 90"
+      ]
+    ],
+    "notes": "Switch to Player to create this separate new stack. Test scoring twice and verify Score remains 2 and sprites reset after each goal."
+  },
+  {
+    "slide": 40,
+    "type": "check",
+    "step": null,
+    "title": "Scoreboard check",
+    "code_blocks": [],
+    "notes": "If score never changes, check touching Goal on Ball. If score increments multiple times, ensure Ball resets inside goal if. If the Player does not reset, check broadcast and receive spellings."
+  },
+  {
+    "slide": 41,
+    "type": "chapter",
+    "step": null,
+    "title": "Add a goalkeeper",
+    "code_blocks": [],
+    "notes": "Goalie uses an independent script, separate from Ball and Player."
+  },
+  {
+    "slide": 42,
+    "type": "setup",
+    "step": "23",
+    "title": "Choose a Goalie",
+    "code_blocks": [],
+    "notes": "Use position x=195, y=0, size 70%. Keep Goal behind Goalie. The provided sample project uses x 195."
+  },
+  {
+    "slide": 43,
+    "type": "lesson",
+    "step": "23",
+    "title": "Place your Goalie",
+    "code_blocks": [
+      [
+        "Events",
+        "when green flag clicked"
+      ],
+      [
+        "Motion",
+        "go to x: 195  y: 0"
+      ],
+      [
+        "Looks",
+        "set size to 70 %"
+      ]
+    ],
+    "notes": "Select Goalie and create this setup. Size affects difficulty. You can also add show block to ensure the sprite appears after resets."
+  },
+  {
+    "slide": 44,
+    "type": "lesson",
+    "step": "23",
+    "title": "Patrol up and down",
+    "code_blocks": [
+      [
+        "Control",
+        "forever"
+      ],
+      [
+        "Motion",
+        "glide 2.5 secs to x: 195 y: 80"
+      ],
+      [
+        "Motion",
+        "glide 2.5 secs to x: 195 y: -80"
+      ]
+    ],
+    "notes": "Both glide blocks must be INSIDE Goalie forever. Uploaded project differs: it uses y ±50 and 2 sec; adjust for this lesson to y ±80 and 2.5 sec."
+  },
+  {
+    "slide": 45,
+    "type": "lesson",
+    "step": "24",
+    "title": "Check for a save",
+    "code_blocks": [
+      [
+        "Control",
+        "if <touching [Goalie]?> then"
+      ]
+    ],
+    "notes": "Switch back to Ball. Add another if inside the Ball forever loop. The written lesson calls it the third if, after dribble and goal detection. If goal/save happen at exactly the same time, detection order may matter."
+  },
+  {
+    "slide": 46,
+    "type": "lesson",
+    "step": "24",
+    "title": "Saved!",
+    "code_blocks": [
+      [
+        "Looks",
+        "say [Saved!] for 1 seconds"
+      ],
+      [
+        "Motion",
+        "go to x: 0  y: 0"
+      ]
+    ],
+    "notes": "Put these two inside Ball touching Goalie if. The Player stays where they are on a save; only a GOAL broadcasts ResetPlayer."
+  },
+  {
+    "slide": 47,
+    "type": "chapter",
+    "step": null,
+    "title": "Beat the clock",
+    "code_blocks": [],
+    "notes": "This is a NEW flag-clicked stack on Ball. If students place this after forever in the same stack, the timer never starts."
+  },
+  {
+    "slide": 48,
+    "type": "setup",
+    "step": "25",
+    "title": "Add the match clock",
+    "code_blocks": [],
+    "notes": "Use a second all-sprites variable, Time. It should be separate from Score."
+  },
+  {
+    "slide": 49,
+    "type": "lesson",
+    "step": "25",
+    "title": "Start with 60 seconds",
+    "code_blocks": [
+      [
+        "Events",
+        "when green flag clicked"
+      ],
+      [
+        "Variables",
+        "set [Time] to 60"
+      ]
+    ],
+    "notes": "Start a new Ball green flag stack for the clock. This is NOT below the Ball forever loop."
+  },
+  {
+    "slide": 50,
+    "type": "lesson",
+    "step": "25",
+    "title": "Keep going until zero",
+    "code_blocks": [
+      [
+        "Control",
+        "repeat until <(Time) < (1)>"
+      ]
+    ],
+    "notes": "Use Control repeat until, Operators <, and the Time variable bubble. The blocks on the next slide go INSIDE it."
+  },
+  {
+    "slide": 51,
+    "type": "lesson",
+    "step": "25",
+    "title": "Tick... tock...",
+    "code_blocks": [
+      [
+        "Control",
+        "wait 1 seconds"
+      ],
+      [
+        "Variables",
+        "change [Time] by -1"
+      ]
+    ],
+    "notes": "Place wait then change Time by -1 INSIDE repeat until. Students should be able to watch the number fall once per second."
+  },
+  {
+    "slide": 52,
+    "type": "lesson",
+    "step": "25",
+    "title": "Full time!",
+    "code_blocks": [
+      [
+        "Looks",
+        "say [FULL TIME!] for 2 seconds"
+      ],
+      [
+        "Control",
+        "stop [all]"
+      ]
+    ],
+    "notes": "These two blocks go AFTER repeat until, still in the new timer flag stack. If Score reaches 3 first, the win branch stops all scripts."
+  },
+  {
+    "slide": 53,
+    "type": "check",
+    "step": null,
+    "title": "Kickoff! Play the game",
+    "code_blocks": [],
+    "notes": "Ask each student to test a full match. Make sure pressing Space from far away does nothing, saved shots do not score, and Score resets when the green flag is clicked."
+  },
+  {
+    "slide": 54,
+    "type": "chapter",
+    "step": null,
+    "title": "Bonus challenges",
+    "code_blocks": [],
+    "notes": "All four challenges are optional extensions. They require more experimentation and are not needed for the base game."
+  },
+  {
+    "slide": 55,
+    "type": "bonus",
+    "step": "C1",
+    "title": "Speed Boots",
+    "code_blocks": [
+      [
+        "Control",
+        "if <key [shift] pressed?> then"
+      ],
+      [
+        "Motion",
+        "move 4 steps"
+      ]
+    ],
+    "notes": "Add a fifth if INSIDE Player forever. Extra move 4 steps is in addition to movement from the arrow key. Ask: why does the player sometimes outrun the ball?"
+  },
+  {
+    "slide": 56,
+    "type": "bonus",
+    "step": "C1",
+    "title": "Fix the fast dribble",
+    "code_blocks": [
+      [
+        "Motion",
+        "move 10 steps"
+      ]
+    ],
+    "notes": "In the Ball touching Player branch, change move 6 to move 10. Compare 6 and 10 for how smooth the dribble feels. This changes normal dribbling too; a conditional speed boost is a more advanced fix."
+  },
+  {
+    "slide": 57,
+    "type": "bonus",
+    "step": "C2",
+    "title": "Meet Player 2",
+    "code_blocks": [
+      [
+        "Motion",
+        "go to x: 120  y: 0"
+      ],
+      [
+        "Motion",
+        "point in direction -90"
+      ]
+    ],
+    "notes": "Duplicate Player, rename Player2, and give it a different costume color. Modify Player2 green flag starting position. Be sure reset code for Player2 is updated too."
+  },
+  {
+    "slide": 58,
+    "type": "bonus",
+    "step": "C2",
+    "title": "WASD controls",
+    "code_blocks": [
+      [
+        "Control",
+        "if <key [w] pressed?> then"
+      ],
+      [
+        "Motion",
+        "point in direction 0"
+      ],
+      [
+        "Motion",
+        "move 5 steps"
+      ]
+    ],
+    "notes": "Duplicate the Player movement logic to Player2 and replace four arrows with W=up, A=left, S=down, D=right. Show this W example, then ask kids to make the other three."
+  },
+  {
+    "slide": 59,
+    "type": "bonus",
+    "step": "C2",
+    "title": "Either player can dribble",
+    "code_blocks": [
+      [
+        "Control",
+        "if <touching [Player]?> or <touching [Player2]?> then"
+      ]
+    ],
+    "notes": "In Ball forever replace the touching Player condition with an Operators OR containing two Sensing touching blocks. The Ball needs extra logic to pick WHICH player’s direction; a simple direction-of-Player still follows Player1 even when Player2 touches. For the extension, add two separate dribble branches for each player or a direction selection if/else. Explain limitation clearly."
+  },
+  {
+    "slide": 60,
+    "type": "bonus",
+    "step": "C2",
+    "title": "Player 2 can shoot",
+    "code_blocks": [
+      [
+        "Events",
+        "when [f] key pressed"
+      ],
+      [
+        "Control",
+        "if <touching [Player2]?> then"
+      ],
+      [
+        "Motion",
+        "point towards [Goal]"
+      ]
+    ],
+    "notes": "Make a SECOND key stack on Ball for F. Continue by adding the same move 60 and repeat 16 → move 12 → wait 0.03 kick travel from Player 1, or the kick may fight dribbling. For truly competitive 2-player scoring, build a second Goal and separate scores; one Score variable only counts shared goals."
+  },
+  {
+    "slide": 61,
+    "type": "bonus",
+    "step": "C3",
+    "title": "Slippery Ball",
+    "code_blocks": [
+      [
+        "Variables",
+        "set [KickSpeed] to 12"
+      ]
+    ],
+    "notes": "Make a variable KickSpeed for Ball only. In the Space kick stack, replace the fixed repeat kick with a fading-speed loop. Note that preserving move 60 may be necessary to free the Ball from the Player."
+  },
+  {
+    "slide": 62,
+    "type": "bonus",
+    "step": "C3",
+    "title": "Make the Ball slow down",
+    "code_blocks": [
+      [
+        "Control",
+        "repeat until <(KickSpeed) < (1)>"
+      ],
+      [
+        "Motion",
+        "move (KickSpeed) steps"
+      ]
+    ],
+    "notes": "The move block uses the orange KickSpeed variable bubble instead of the number 12. It belongs inside repeat until."
+  },
+  {
+    "slide": 63,
+    "type": "bonus",
+    "step": "C3",
+    "title": "Add friction",
+    "code_blocks": [
+      [
+        "Variables",
+        "change [KickSpeed] by -1"
+      ],
+      [
+        "Control",
+        "wait 0.03 seconds"
+      ]
+    ],
+    "notes": "Both blocks belong inside the same repeat until loop, after move KickSpeed steps. Ask children: how would changing -1 to -2 affect stopping distance?"
+  },
+  {
+    "slide": 64,
+    "type": "bonus",
+    "step": "C4",
+    "title": "Golden Goal",
+    "code_blocks": [
+      [
+        "Variables",
+        "set [GoldenGoal] to 1"
+      ]
+    ],
+    "notes": "Create a GoldenGoal variable; initialize to 0 at match start. On timeout, set it to 1 instead of immediately stopping. In a one-player game this is an overtime rule, not a true tie. A real two-player tie needs two scores."
+  },
+  {
+    "slide": 65,
+    "type": "bonus",
+    "step": "C4",
+    "title": "Overtime begins",
+    "code_blocks": [
+      [
+        "Looks",
+        "say [GOLDEN GOAL!] for 2 seconds"
+      ]
+    ],
+    "notes": "In the time-up stack, remove stop all and display the Golden Goal message after setting GoldenGoal to 1. The existing win-at-3 code remains unless teacher chooses a different rule."
+  },
+  {
+    "slide": 66,
+    "type": "bonus",
+    "step": "C4",
+    "title": "The next goal wins",
+    "code_blocks": [
+      [
+        "Control",
+        "if <(GoldenGoal) = (1)> then"
+      ],
+      [
+        "Looks",
+        "say [YOU WIN!] for 2 seconds"
+      ],
+      [
+        "Control",
+        "stop [all]"
+      ]
+    ],
+    "notes": "Put this inside Ball touching Goal branch after score updates. GoldenGoal must have been reset to 0 at the start of every match. This implements single-player overtime; two-player golden goal additionally needs team identification and separate scores."
+  },
+  {
+    "slide": 67,
+    "type": "finish",
+    "step": null,
+    "title": "You built a real game!",
+    "code_blocks": [],
+    "notes": "Ask students to showcase one feature they built and one bug they fixed. Remind them to save the project with a memorable name and share it if their classroom settings permit."
+  }
+]

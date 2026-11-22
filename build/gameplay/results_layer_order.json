@@ -1,0 +1,734 @@
+{
+ "ref_default": {
+  "order": [
+   "Stage",
+   "Goal",
+   "Goalie",
+   "Player",
+   "Ball"
+  ],
+  "threadOrder": [
+   "Ball",
+   "Ball",
+   "Player",
+   "Goalie"
+  ],
+  "kicked": 10,
+  "trials": 12,
+  "rows": [
+   {
+    "n": 4,
+    "touchingAtPress": false,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 5,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 6,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 7,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 8,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 9,
+    "touchingAtPress": true,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 10,
+    "touchingAtPress": false,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 11,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 12,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 13,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 14,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 15,
+    "touchingAtPress": true,
+    "moved12f": 6,
+    "kicked": false
+   }
+  ]
+ },
+ "ref_playerDraggedToFront": {
+  "order": [
+   "Stage",
+   "Goal",
+   "Goalie",
+   "Ball",
+   "Player"
+  ],
+  "threadOrder": [
+   "Player",
+   "Ball",
+   "Ball",
+   "Goalie"
+  ],
+  "kicked": 0,
+  "trials": 12,
+  "rows": [
+   {
+    "n": 4,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 5,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 6,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 7,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 8,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 9,
+    "touchingAtPress": false,
+    "moved12f": 0,
+    "kicked": false
+   },
+   {
+    "n": 10,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 11,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 12,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 13,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 14,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 15,
+    "touchingAtPress": false,
+    "moved12f": 0,
+    "kicked": false
+   }
+  ]
+ },
+ "c2b_default_F": {
+  "order": [
+   "Stage",
+   "Goal",
+   "Goalie",
+   "Player",
+   "Ball",
+   "Player2"
+  ],
+  "threadOrder": [
+   "Player2",
+   "Ball",
+   "Ball",
+   "Player",
+   "Goalie"
+  ],
+  "kicked": 0,
+  "trials": 12,
+  "rows": [
+   {
+    "n": 1,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 2,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 3,
+    "touchingAtPress": false,
+    "moved12f": 0,
+    "kicked": false
+   },
+   {
+    "n": 4,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 5,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 6,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 7,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 8,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 9,
+    "touchingAtPress": false,
+    "moved12f": 0,
+    "kicked": false
+   },
+   {
+    "n": 10,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 11,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 12,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   }
+  ]
+ },
+ "c2b_ballToFront_F": {
+  "order": [
+   "Stage",
+   "Goal",
+   "Goalie",
+   "Player",
+   "Player2",
+   "Ball"
+  ],
+  "threadOrder": [
+   "Ball",
+   "Ball",
+   "Player2",
+   "Player",
+   "Goalie"
+  ],
+  "kicked": 10,
+  "trials": 12,
+  "rows": [
+   {
+    "n": 1,
+    "touchingAtPress": true,
+    "moved12f": 138.4,
+    "kicked": true
+   },
+   {
+    "n": 2,
+    "touchingAtPress": true,
+    "moved12f": 138.4,
+    "kicked": true
+   },
+   {
+    "n": 3,
+    "touchingAtPress": true,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 4,
+    "touchingAtPress": false,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 5,
+    "touchingAtPress": true,
+    "moved12f": 138.3,
+    "kicked": true
+   },
+   {
+    "n": 6,
+    "touchingAtPress": true,
+    "moved12f": 138.3,
+    "kicked": true
+   },
+   {
+    "n": 7,
+    "touchingAtPress": true,
+    "moved12f": 138.3,
+    "kicked": true
+   },
+   {
+    "n": 8,
+    "touchingAtPress": true,
+    "moved12f": 138.3,
+    "kicked": true
+   },
+   {
+    "n": 9,
+    "touchingAtPress": true,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 10,
+    "touchingAtPress": false,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 11,
+    "touchingAtPress": true,
+    "moved12f": 138.3,
+    "kicked": true
+   },
+   {
+    "n": 12,
+    "touchingAtPress": true,
+    "moved12f": 138.3,
+    "kicked": true
+   }
+  ]
+ },
+ "fix_default": {
+  "order": [
+   "Stage",
+   "Goal",
+   "Goalie",
+   "Player",
+   "Ball"
+  ],
+  "threadOrder": [
+   "Ball",
+   "Ball",
+   "Player",
+   "Goalie"
+  ],
+  "kicked": 12,
+  "trials": 12,
+  "rows": [
+   {
+    "n": 4,
+    "touchingAtPress": false,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 5,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 6,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 7,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 8,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 9,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 10,
+    "touchingAtPress": false,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 11,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 12,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 13,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 14,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 15,
+    "touchingAtPress": true,
+    "moved12f": 150,
+    "kicked": true
+   }
+  ]
+ },
+ "fix_playerDraggedToFront": {
+  "order": [
+   "Stage",
+   "Goal",
+   "Goalie",
+   "Ball",
+   "Player"
+  ],
+  "threadOrder": [
+   "Player",
+   "Ball",
+   "Ball",
+   "Goalie"
+  ],
+  "kicked": 12,
+  "trials": 12,
+  "rows": [
+   {
+    "n": 4,
+    "touchingAtPress": false,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 5,
+    "touchingAtPress": false,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 6,
+    "touchingAtPress": false,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 7,
+    "touchingAtPress": false,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 8,
+    "touchingAtPress": false,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 9,
+    "touchingAtPress": false,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 10,
+    "touchingAtPress": false,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 11,
+    "touchingAtPress": false,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 12,
+    "touchingAtPress": false,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 13,
+    "touchingAtPress": false,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 14,
+    "touchingAtPress": false,
+    "moved12f": 150,
+    "kicked": true
+   },
+   {
+    "n": 15,
+    "touchingAtPress": false,
+    "moved12f": 144,
+    "kicked": true
+   }
+  ]
+ },
+ "fix_playerToFront_fromAbove": {
+  "order": [
+   "Stage",
+   "Goal",
+   "Goalie",
+   "Ball",
+   "Player"
+  ],
+  "threadOrder": [
+   "Player",
+   "Ball",
+   "Ball",
+   "Goalie"
+  ],
+  "kicked": 4,
+  "trials": 12,
+  "rows": [
+   {
+    "n": 1,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 2,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 3,
+    "touchingAtPress": false,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 4,
+    "touchingAtPress": false,
+    "moved12f": 144.8,
+    "kicked": true
+   },
+   {
+    "n": 5,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 6,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 7,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 8,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 9,
+    "touchingAtPress": false,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 10,
+    "touchingAtPress": false,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 11,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 12,
+    "touchingAtPress": false,
+    "moved12f": 6,
+    "kicked": false
+   }
+  ]
+ },
+ "ref_default_fromAbove": {
+  "order": [
+   "Stage",
+   "Goal",
+   "Goalie",
+   "Player",
+   "Ball"
+  ],
+  "threadOrder": [
+   "Ball",
+   "Ball",
+   "Player",
+   "Goalie"
+  ],
+  "kicked": 10,
+  "trials": 12,
+  "rows": [
+   {
+    "n": 1,
+    "touchingAtPress": true,
+    "moved12f": 145.3,
+    "kicked": true
+   },
+   {
+    "n": 2,
+    "touchingAtPress": true,
+    "moved12f": 145.1,
+    "kicked": true
+   },
+   {
+    "n": 3,
+    "touchingAtPress": true,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 4,
+    "touchingAtPress": false,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 5,
+    "touchingAtPress": true,
+    "moved12f": 144.8,
+    "kicked": true
+   },
+   {
+    "n": 6,
+    "touchingAtPress": true,
+    "moved12f": 144.7,
+    "kicked": true
+   },
+   {
+    "n": 7,
+    "touchingAtPress": true,
+    "moved12f": 144.5,
+    "kicked": true
+   },
+   {
+    "n": 8,
+    "touchingAtPress": true,
+    "moved12f": 144.3,
+    "kicked": true
+   },
+   {
+    "n": 9,
+    "touchingAtPress": true,
+    "moved12f": 6,
+    "kicked": false
+   },
+   {
+    "n": 10,
+    "touchingAtPress": false,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 11,
+    "touchingAtPress": true,
+    "moved12f": 144,
+    "kicked": true
+   },
+   {
+    "n": 12,
+    "touchingAtPress": true,
+    "moved12f": 143.9,
+    "kicked": true
+   }
+  ]
+ }
+}
